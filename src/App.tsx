@@ -1,6 +1,5 @@
-import { Button } from "@nextui-org/react"
-import { useState } from "react"
-import { Navbar } from "./components"
+import { Button } from '@nextui-org/react'
+import { Navbar } from './components'
 
 function App() {
   return (
