@@ -10,14 +10,18 @@
     }
   },
   "extends": ["plugin:react/recommended", "standard-with-typescript", "plugin:react/jsx-runtime", "prettier"],
+  "parser": "@typescript-eslint/parser",
   "overrides": [],
   "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
   "plugins": ["react"],
   "rules": {
-    "no-unused-vars": "warn",
+    "no-unused-vars": "error",
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error"
   }

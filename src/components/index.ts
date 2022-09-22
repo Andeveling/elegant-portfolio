@@ -1,5 +1,3 @@
-export * from "./Navbar/Box"
-export * from "./Content/Content"
-export * from "./Navbar/Layout"
-export * from "./Navbar/Logo"
-export { default as Navbar } from "./Navbar/Navbar"
+export * from './Content'
+export * from './Layout'
+export * from './Nav'

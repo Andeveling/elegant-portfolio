@@ -4,30 +4,31 @@ specifiers:
   '@nextui-org/react': 1.0.0-beta.10
   '@reactivex/rxjs': ^6.6.7
   '@reduxjs/toolkit': ^1.8.5
-  '@types/node': ^18.7.18
-  '@types/react': ^18.0.20
+  '@types/node': ^18.7.16
+  '@types/react': ^18.0.17
   '@types/react-dom': ^18.0.6
   '@types/react-redux': ^7.1.24
   '@types/react-router-dom': ^5.3.3
   '@typescript-eslint/eslint-plugin': ^5.38.0
   '@vitejs/plugin-react': ^2.1.0
   axios: ^0.27.2
-  eslint: ^8.23.1
+  eslint: ^8.0.1
   eslint-config-prettier: ^8.5.0
   eslint-config-standard-with-typescript: ^23.0.0
-  eslint-plugin-import: ^2.26.0
-  eslint-plugin-n: ^15.2.5
-  eslint-plugin-promise: ^6.0.1
+  eslint-plugin-import: ^2.25.2
+  eslint-plugin-n: ^15.0.0
+  eslint-plugin-promise: ^6.0.0
   eslint-plugin-react: ^7.31.8
   prettier: ^2.7.1
   react: ^18.2.0
   react-dom: ^18.2.0
+  react-iconly: ^2.2.5
   react-redux: ^8.0.2
-  react-router-dom: ^6.4.1
+  react-router-dom: ^6.4.0
   rxjs: ^7.5.6
   styled-components: ^5.3.5
   typescript: '*'
-  vite: ^3.1.3
+  vite: ^3.1.0
 
 dependencies:
   '@nextui-org/react': 1.0.0-beta.10_biqbaboplfbrettd7655fr4n2y
@@ -35,6 +36,7 @@ dependencies:
   axios: 0.27.2
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-iconly: 2.2.5_react@18.2.0
   react-redux: 8.0.2_6hrpdt74nuubt2lijsfizev3cu
   react-router-dom: 6.4.1_biqbaboplfbrettd7655fr4n2y
   rxjs: 7.5.6
@@ -3123,6 +3125,15 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
+    dev: false
+
+  /react-iconly/2.2.5_react@18.2.0:
+    resolution: {integrity: sha512-c9WO/2TJltmyCVGj+/mdJZFoldfzYA8uUPmcml03D6YlBVWsCN5gq5Vb2k95qmeg+vSqMRvC69yghZvM0T4lKQ==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: ^16.8.6 || ^17
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /react-is/16.13.1:

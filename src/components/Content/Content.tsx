@@ -1,8 +1,8 @@
-import { Text, Spacer } from "@nextui-org/react"
-import { Box } from "../Navbar/Box.js"
+import { Text, Spacer } from '@nextui-org/react'
+import { Box } from '@/components'
 
 export const Content = () => (
-  <Box css={{ px: "$12", mt: "$8", "@xsMax": { px: "$10" } }}>
+  <Box css={{ px: '$12', mt: '$8', '@xsMax': { px: '$10' } }}>
     <Text h2>Lorem ipsum dolor sit amet</Text>
     <Text size='$lg'>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
