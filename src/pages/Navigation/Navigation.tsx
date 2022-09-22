@@ -1,4 +1,4 @@
-import { Container, Row, Col, Card, Text, Button } from '@nextui-org/react'
+import { Card, Col, Container, Row, Text } from '@nextui-org/react'
 
 export default function Navigation() {
   return (

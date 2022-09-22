@@ -29,7 +29,7 @@ export default function Nav() {
         </Button.Group>
         <Navbar.Content>
           <Button color='gradient' bordered>
-            Let's Conect
+            Let&apos;s Conect
           </Button>
         </Navbar.Content>
       </Navbar>

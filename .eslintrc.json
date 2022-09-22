@@ -4,14 +4,8 @@
     "es2021": true,
     "node": true
   },
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
-  },
-  "extends": ["plugin:react/recommended", "standard-with-typescript", "plugin:react/jsx-runtime", "prettier"],
+  "extends": ["plugin:react/recommended", "standard", "plugin:react/jsx-runtime", "prettier"],
   "parser": "@typescript-eslint/parser",
-  "overrides": [],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -19,10 +13,13 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react"],
+  "plugins": ["react", "@typescript-eslint"],
   "rules": {
-    "no-unused-vars": "error",
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error"
+    "no-unused-vars": "warn"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }
