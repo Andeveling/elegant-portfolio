@@ -1,15 +1,11 @@
-import { PublicRoutes } from '@/routes'
 import CloseIcon from '@mui/icons-material/Close'
 import MenuIcon from '@mui/icons-material/Menu'
-import { Button, Navbar, Text } from '@nextui-org/react'
+import { Button, Navbar, Text, Spacer } from '@nextui-org/react'
 import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
 
 export default function Nav() {
   const collapseItems = ['Home', 'Work', 'About', 'Contact']
-
   const [isActive, setActive] = useState<boolean>(false)
-
   const iconHandler = (): void => setActive(!isActive)
 
   return (
@@ -23,7 +19,9 @@ export default function Nav() {
           )}
         </Navbar.Toggle>
 
-        <Text h4>Andres Parra</Text>
+        <Text h3 color='$warningLightContrast'>
+          Andeveling
+        </Text>
       </Navbar.Brand>
       <Button.Group color='secondary' light>
         <Navbar.Collapse>
@@ -36,11 +34,20 @@ export default function Nav() {
       </Button.Group>
 
       <Navbar.Content activeColor='warning' hideIn='xs' variant='default'>
-        <Navbar.Link href='#home'>Home</Navbar.Link>
-        <Navbar.Link href='#about'>About</Navbar.Link>
-        <Navbar.Link href='#works'>Work</Navbar.Link>
-        <Navbar.Link href='#'>Contact</Navbar.Link>
+        <Navbar.Link href='#home'>
+          <Text h4>Inicio</Text>
+        </Navbar.Link>
+        <Navbar.Link href='#works'>
+          <Text h4>Proyectos</Text>
+        </Navbar.Link>
+        <Navbar.Link href='#about'>
+          <Text h4>Sobre mi</Text>
+        </Navbar.Link>
+        <Navbar.Link href='#skills'>
+          <Text h4>Habilidades</Text>
+        </Navbar.Link>
       </Navbar.Content>
+      <Spacer y={2} />
     </Navbar>
   )
 }

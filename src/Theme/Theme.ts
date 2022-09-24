@@ -20,6 +20,7 @@ export const Theme = createTheme({
       gradient: 'linear-gradient(112deg, $blue100 -25%, $pink500 -10%, $purple500 80%)',
       link: '#5E1DAD',
 
+      gold: '#7c6f3b',
       // you can also create your own color
       myColor: '#ff4ecd',
 

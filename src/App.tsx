@@ -1,15 +1,15 @@
-import { Nav, About, ScrollToTop, Footer } from '@/components'
+import { Nav, About, Footer } from '@/components'
 import { Home } from '@/pages'
 import { PublicRoutes } from '@/routes'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { globalStyles } from '@/Theme'
+import { useRef } from 'react'
 
 export default function App() {
   globalStyles()
   return (
     <BrowserRouter>
       <Nav />
-      <ScrollToTop />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path={PublicRoutes.HOME} element={<Home />} />

@@ -1,10 +1,8 @@
-import { Footer, Header, Layout, Works } from '@/components'
+import { Header, Layout, ScrollToTop, Works } from '@/components'
 import Skills from '@/components/Skills/Skills'
 import { Spacer } from '@nextui-org/react'
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import { About } from '../../components/About'
-import { ScrollToTop } from '@/components/ScrollToTop/ScrollToTop'
-import { Link, ScrollRestoration } from 'react-router-dom'
 
 export default function Home() {
   const header = useRef(null)
@@ -28,6 +26,7 @@ export default function Home() {
       <Spacer y={2} />
       <Skills />
       <Spacer y={2} />
+      <ScrollToTop />
     </Layout>
   )
 }

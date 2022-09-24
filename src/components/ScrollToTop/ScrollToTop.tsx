@@ -5,7 +5,7 @@ export const ScrollToTop = () => {
   const [scrolled, setScrolled] = useState(true)
   useEffect(() => {
     const onScroll = () => {
-      window.scrollY > 50 ? setScrolled(true) : setScrolled(false)
+      window.scrollY > 250 ? setScrolled(true) : setScrolled(false)
     }
     window.addEventListener('scroll', onScroll)
     return () => window.removeEventListener('scroll', onScroll)
@@ -25,9 +25,9 @@ export const ScrollToTop = () => {
           sx={{
             fontSize: 50,
             position: 'fixed',
-            bottom: '15px',
-            right: '20px',
-            zIndex: 100,
+            bottom: 15,
+            right: 20,
+            zIndex: 3,
             cursor: 'pointer',
             color: 'gold',
           }}

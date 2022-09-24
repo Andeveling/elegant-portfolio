@@ -8,7 +8,7 @@ export default function About() {
       id='about'
       fluid
       alignContent='center'
-      css={{ boxSizing: 'border-box', p: 0, borderBottom: '10px solid $warning' }}>
+      css={{ boxSizing: 'border-box', mt: 100, p: 0, borderBottom: '10px solid $warning', height: '100vh' }}>
       <Box>
         <Text size={80} h1>
           About.
