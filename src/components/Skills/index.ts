@@ -1,2 +1,6 @@
+export { default as HeaderSoftSkills } from './HeaderSoftSkills'
+export { default as HeaderTechSkills } from './HeaderTechSkills'
 export { default as Skills } from './Skills'
 export { default as SkillsList } from './SkillsList'
+export { default as SoftSkills } from './SoftSkills'
+export * from './dataSkills'

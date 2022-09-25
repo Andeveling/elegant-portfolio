@@ -2,6 +2,6 @@
 export enum PublicRoutes {
   HOME = '/home',
   ABOUT = '/about',
-  WORK = '/work',
+  WORK = '/works',
   SKILLS = '/skills',
 }

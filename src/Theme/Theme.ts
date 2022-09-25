@@ -22,7 +22,7 @@ export const Theme = createTheme({
 
       gold: '#7c6f3b',
       // you can also create your own color
-      myColor: '#ff4ecd',
+      pinkys: '#ff4ecd',
 
       // ...  more colors
     },

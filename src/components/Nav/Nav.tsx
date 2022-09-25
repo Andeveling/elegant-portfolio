@@ -27,8 +27,20 @@ export default function Nav() {
         <Navbar.Collapse>
           {collapseItems.map((item, index) => (
             <Navbar.CollapseItem key={index}>
-              <Text onClick={iconHandle} h4 b>
-                <Link href={`#${item}`}>{item}</Link>
+              <Text h4 b>
+                <Link
+                  css={{
+                    color: '$text',
+                    '&:hover': {
+                      color: '$warning',
+                    },
+                    '&:active': {
+                      borderBottom: '3px solid $warning',
+                    },
+                  }}
+                  href={`#${item}`}>
+                  {item}
+                </Link>
               </Text>
             </Navbar.CollapseItem>
           ))}

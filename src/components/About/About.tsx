@@ -1,5 +1,5 @@
 import { Box, Social, Title } from '@/components'
-import { Container, Divider, Grid, Row, Spacer, Text } from '@nextui-org/react'
+import { Col, Container, Divider, Grid, Row, Spacer, Text } from '@nextui-org/react'
 import Photo from './Photo'
 
 export default function About() {
@@ -17,21 +17,40 @@ export default function About() {
         <Grid.Container gap={2}>
           <Grid xs={12} sm={6} css={{ flexDirection: 'column' }}>
             <Text size='$lg'>
-              Hello, I&prime;m a <strong>Web developer</strong> based in <strong>Buga</strong>, Colombia.
-            </Text>
-            <Text size='$lg'>
-              I am Fabián Andrés Parra Sánchez, a fullstack web developer who learns something new every day, after
-              years of having programming as a hobby, I wanted to change my life by joining a Bootcamp where I have
-              learned about web development and I am putting everything into practice.
-            </Text>
-            <Text size='$lg'>
-              Rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui. Praesent semper feugiat nibh sed
-              pulvinar. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque. Malesuada proin libero nunc
-              consequat interdum varius sit amet. Lectus quam id leo in vitae. Sed viverra tellus in hac habitasse
-              platea dictumst. Vivamus at augue eget arcu. Augue mauris augue neque gravida in.
+              Hola, soy un{' '}
+              <Text b color='warning'>
+                Web developer
+              </Text>
+              , resido en <strong>Buga</strong>, Colombia.
             </Text>
             <Spacer y={1} />
-            <Social />
+            <Text size='$lg'>
+              Yo soy{' '}
+              <Text b color='warning'>
+                Fabián Andrés Parra Sánchez
+              </Text>
+              , inicié mi aprendizaje tech en plataformas digitales, hace un año y complemente al unirme a un bootcamp
+              en junio de este año 2022, es una comunidad increíble que cuenta con gente dispuesta a apoyar y encontré
+              mucha gente con la misma pasión por esta labor.
+            </Text>
+            <Spacer y={1} />
+            <Text size='$lg'>
+              Desde hace muchos años la programación la programación fue uno de mis hobbies, siempre trabaje en pequeños
+              proyectos en C#, inspirado por el mercado indie de videojuegos, hasta que decidí iniciar mi camino como
+              web developer en un bootcamp y llevar este hobbie al siguiente nivel, ahora estoy haciendo de este lindo
+              mundo mi nuevo camino profesional, con el apoyo incondicional de mi{' '}
+              <Text b css={{ color: '$pink700' }}>
+                familia
+              </Text>
+              , en especial de mi esposa.
+            </Text>
+            <Spacer y={1} />
+            <Col css={{ textAlign: 'center' }}>
+              <Text b h5>
+                Visita mis redes:
+              </Text>
+              <Social />
+            </Col>
           </Grid>
           <Grid xs={12} sm={6} justify='center'>
             <Photo />

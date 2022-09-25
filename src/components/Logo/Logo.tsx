@@ -11,7 +11,6 @@ export default function Logo({ name }: LogoProps) {
         css={{
           '@xsMax': {
             fontSize: 35,
-            ml: '5%',
           },
         }}>
         {name}
@@ -23,8 +22,7 @@ export default function Logo({ name }: LogoProps) {
           display: 'flex',
           alignItems: 'center',
         }}>
-        <Badge enableShadow disableOutline color='warning'></Badge>
-        <Progress size='sm' value={100} color='warning' />
+        <Progress shadow striped size='sm' value={100} color='warning' />
       </Row>
     </Col>
   )

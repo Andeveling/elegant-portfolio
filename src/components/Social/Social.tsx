@@ -9,15 +9,8 @@ export const style = {
 export default function Social() {
   return (
     <Container>
-      {/*  <Row justify='center' align='center'>
-        <GitHub sx={style} />
-        <Spacer x={2} />
-        <Twitter sx={style} />
-        <Spacer x={2} />
-        <LinkedIn sx={style} />
-      </Row> */}
       <Row justify='center' align='center'>
-        <Button.Group size='xl' color='warning' auto light>
+        <Button.Group shadow size='xl' color='warning' auto light>
           <Button>
             <Tooltip content={'Github'}>
               <GitHub sx={style} />

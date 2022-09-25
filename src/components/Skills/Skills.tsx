@@ -1,7 +1,7 @@
-import { Container, Grid, Row, Text, Divider, Spacer } from '@nextui-org/react'
-import { Box } from '../Layout'
-import { Title } from '../Title'
-import SkillsList from './SkillsList'
+import { Box, Title, HeaderTechSkills, SkillsList } from '@/components'
+import { Container, Divider, Grid, Row, Spacer } from '@nextui-org/react'
+import HeaderSoftSkills from './HeaderSoftSkills'
+import SoftSkills from './SoftSkills'
 
 export default function Skills() {
   return (
@@ -15,25 +15,14 @@ export default function Skills() {
           <Title title='Skills.' es='Habilidades' />
         </Row>
         <Divider y={1} />
-        <Grid.Container gap={2}>
+        <Grid.Container gap={4}>
           <Grid xs={12} sm={6} css={{ flexDirection: 'column' }}>
-            <Text size='$lg'>
-              Hello, I&prime;m a <strong>Web developer</strong> based in <strong>Buga</strong>, Colombia.
-            </Text>
-            <Text size='$lg'>
-              I am Fabián Andrés Parra Sánchez, a fullstack web developer who learns something new every day, after
-              years of having programming as a hobby, I wanted to change my life by joining a Bootcamp where I have
-              learned about web development and I am putting everything into practice.
-            </Text>
-            <Text size='$lg'>
-              Rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui. Praesent semper feugiat nibh sed
-              pulvinar. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque. Malesuada proin libero nunc
-              consequat interdum varius sit amet. Lectus quam id leo in vitae. Sed viverra tellus in hac habitasse
-              platea dictumst. Vivamus at augue eget arcu. Augue mauris augue neque gravida in.
-            </Text>
-          </Grid>
-          <Grid xs={12} sm={6}>
+            <HeaderTechSkills />
             <SkillsList />
+          </Grid>
+          <Grid xs={12} sm={6} css={{ flexDirection: 'column' }}>
+            <HeaderSoftSkills />
+            <SoftSkills />
           </Grid>
         </Grid.Container>
       </Box>

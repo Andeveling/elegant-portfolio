@@ -1,2 +1,5 @@
 export { default as WorkCard } from './WorkCard'
+export { default as WorkDetail } from './WorkDetail'
 export { default as Works } from './Works'
+export { default as WorksUI } from './WorksUI'
+export * from './data'

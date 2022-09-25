@@ -1,21 +1,20 @@
-import { Card, Divider, Progress, Text } from '@nextui-org/react'
+import { Card, Divider, Progress, Spacer, Text } from '@nextui-org/react'
 
 export default function SkillsList() {
   return (
     <Card css={{ p: 10 }} variant='flat'>
-      <Card.Body>
-        <Text css={{ textAlign: 'center' }} h3>
-          Frontend
+      <Card.Header css={{ jc: 'center' }}>
+        <Text css={{ textAlign: 'center', borderBottom: '1px solid $warning' }} h3>
+          Frontend / Backend
         </Text>
+      </Card.Header>
+      <Card.Body>
         <Text h4>React JS / Redux Toolkit / RTK Query</Text>
         <Progress size='sm' value={50} striped color='warning' />
         <Divider y={1} />
         <Text h4>Material UI / Next UI</Text>
         <Progress size='sm' value={40} striped color='warning' />
         <Divider y={1} />
-        <Text css={{ textAlign: 'center' }} h3>
-          Backend
-        </Text>
         <Text h4>Express JS / Node JS / Sequelize</Text>
         <Progress size='sm' value={35} striped color='success' />
         <Divider y={1} />

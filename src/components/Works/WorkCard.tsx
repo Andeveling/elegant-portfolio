@@ -1,4 +1,4 @@
-import { Card, Col, Row, Text } from '@nextui-org/react'
+import { Badge, Card, Col, Row, Text } from '@nextui-org/react'
 import { ProjectI } from '@/types'
 
 export default function WorkCard({
@@ -27,7 +27,7 @@ export default function WorkCard({
       }}>
       <Card.Header css={{ bg: 'black', position: 'absolute', zIndex: 1, top: 0, opacity: 0.8 }}>
         <Col>
-          <Text transform='uppercase' b h4>
+          <Text b h4>
             {title}
           </Text>
           <Text h5 color='white'>
@@ -38,11 +38,14 @@ export default function WorkCard({
       <Card.Body css={{ p: 0, h: '80%' }}>
         <Card.Image src={imageUrl || ''} objectFit='cover' width={'100%'} height={300} alt={'img'} />
       </Card.Body>
-      <Card.Footer>
+      <Card.Footer css={{ bg: 'black', position: 'absolute', zIndex: 1, bottom: 0 }}>
         <Col>
-          <Row wrap='wrap' justify='space-between' align='center'></Row>
-          <Row wrap='wrap' justify='space-between' align='center'>
-            <Text>{description?.slice(0, 120)}...</Text>
+          <Row wrap='wrap' justify='center' align='center'>
+            {tech?.map((t, i) => (
+              <Badge key={i} css={{ bg: '$warningLightContrast', color: '$accents0', m: 1 }}>
+                {t}
+              </Badge>
+            ))}
           </Row>
         </Col>
       </Card.Footer>
