@@ -1,9 +1,8 @@
-import { Container, Divider, Text, Row } from '@nextui-org/react'
+import { Container, Divider, Text, Row, Grid } from '@nextui-org/react'
 
 export default function Header() {
   return (
     <Container
-      id='home'
       fluid
       alignContent='center'
       justify='center'
@@ -15,32 +14,44 @@ export default function Header() {
         flexDirection: 'column',
         borderBottom: '10px solid $warningLightContrast',
       }}>
-      <Row justify='center'>
-        <Text
-          css={{
-            lineHeight: '$9xl',
-            textAlign: 'center',
-          }}
-          weight='bold'
-          h2>
-          Hola, soy&nbsp;
-        </Text>
-        <Text
-          css={{
-            lineHeight: '$9xl',
-            textAlign: 'center',
-            color: '$warningLightContrast',
-          }}
-          weight='bold'
-          h2>
-          Andres Parra
-        </Text>
-      </Row>
+      <Grid.Container justify='center'>
+        <Grid xs={12} sm={12} justify='center'>
+          <Text
+            css={{
+              lineHeight: '$9xl',
+              textAlign: 'center',
+            }}
+            weight='bold'
+            h2>
+            Hola, soy&nbsp;
+          </Text>
+        </Grid>
+        <Grid xs={12} sm={12} justify='center'>
+          <Text
+            size={100}
+            css={{
+              lineHeight: '$9xl',
+              textAlign: 'left',
+              color: '$warningLightContrast',
+              '@xsMax': {
+                fontSize: 60,
+                textAlign: 'center',
+              },
+            }}
+            weight='bold'
+            h2>
+            Andres Parra
+          </Text>
+        </Grid>
+      </Grid.Container>
 
       <Text
         css={{
           lineHeight: '$9xl',
           textAlign: 'center',
+          '@xsMax': {
+            fontSize: 40,
+          },
         }}
         size={80}
         weight='bold'
@@ -51,6 +62,9 @@ export default function Header() {
       <Text
         css={{
           textAlign: 'center',
+          '@xsMax': {
+            fontSize: 40,
+          },
         }}
         weight='bold'
         h1>

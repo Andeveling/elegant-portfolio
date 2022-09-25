@@ -2,7 +2,7 @@ import { Card, Divider, Progress, Text } from '@nextui-org/react'
 
 export default function SkillsList() {
   return (
-    <Card css={{ p: 10 }}>
+    <Card css={{ p: 10 }} variant='flat'>
       <Card.Body>
         <Text css={{ textAlign: 'center' }} h3>
           Frontend

@@ -1,32 +1,17 @@
-import { Header, Layout, ScrollToTop, Works } from '@/components'
-import Skills from '@/components/Skills/Skills'
+import { About, Header, Layout, Skills, Works } from '@/components'
 import { Spacer } from '@nextui-org/react'
-import { useRef } from 'react'
-import { About } from '../../components/About'
 
 export default function Home() {
-  const header = useRef(null)
-  const works = useRef(null)
-  const about = useRef(null)
-
-  const scrollToSection = (elementRef: any) => {
-    window.scrollTo({
-      top: elementRef.current.offsetTop,
-      behavior: 'smooth',
-    })
-  }
-
   return (
     <Layout>
+      <Spacer id='home' />
       <Header />
-      <Spacer y={2} />
+      <Spacer id='works' />
       <Works />
-      <Spacer y={2} />
+      <Spacer id='about' />
       <About />
-      <Spacer y={2} />
+      <Spacer id='skills' />
       <Skills />
-      <Spacer y={2} />
-      <ScrollToTop />
     </Layout>
   )
 }

@@ -1,14 +1,20 @@
-import { Container, Text, Spacer, Grid } from '@nextui-org/react'
+import { Container, Grid, Row, Text, Divider, Spacer } from '@nextui-org/react'
 import { Box } from '../Layout'
+import { Title } from '../Title'
 import SkillsList from './SkillsList'
 
 export default function Skills() {
   return (
-    <Container id='skills' fluid alignContent='center' css={{ boxSizing: 'border-box', p: 0 }}>
+    <Container
+      fluid
+      alignContent='center'
+      css={{ boxSizing: 'border-box', borderBottom: '10px solid $warning', minHeight: '95vh', p: 0 }}>
+      <Spacer y={1} />
       <Box>
-        <Text size={80} h1>
-          Skills.
-        </Text>
+        <Row>
+          <Title title='Skills.' es='Habilidades' />
+        </Row>
+        <Divider y={1} />
         <Grid.Container gap={2}>
           <Grid xs={12} sm={6} css={{ flexDirection: 'column' }}>
             <Text size='$lg'>

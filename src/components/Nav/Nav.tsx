@@ -1,53 +1,55 @@
 import CloseIcon from '@mui/icons-material/Close'
 import MenuIcon from '@mui/icons-material/Menu'
-import { Button, Navbar, Text, Spacer } from '@nextui-org/react'
+import { Link, Navbar, Text } from '@nextui-org/react'
 import { useState } from 'react'
+import { ScrollToTop, Logo } from '@/components'
 
 export default function Nav() {
-  const collapseItems = ['Home', 'Work', 'About', 'Contact']
+  const collapseItems = ['home', 'works', 'about', 'skills']
   const [isActive, setActive] = useState<boolean>(false)
-  const iconHandler = (): void => setActive(!isActive)
+  const iconHandle = (): void => setActive(!isActive)
 
   return (
-    <Navbar variant='floating' maxWidth='fluid'>
-      <Navbar.Brand>
-        <Navbar.Toggle aria-label='toggle navigation' showIn='xs'>
-          {isActive ? (
-            <CloseIcon onClick={iconHandler} fontSize='large' />
-          ) : (
-            <MenuIcon onClick={iconHandler} fontSize='large' />
-          )}
-        </Navbar.Toggle>
+    <>
+      <Navbar variant='sticky'>
+        <Navbar.Brand>
+          <Navbar.Toggle aria-label='toggle navigation' showIn='xs'>
+            {isActive ? (
+              <CloseIcon onClick={iconHandle} fontSize='large' />
+            ) : (
+              <MenuIcon onClick={iconHandle} fontSize='large' />
+            )}
+          </Navbar.Toggle>
 
-        <Text h3 color='$warningLightContrast'>
-          Andeveling
-        </Text>
-      </Navbar.Brand>
-      <Button.Group color='secondary' light>
+          <Logo name='Andeveling' />
+        </Navbar.Brand>
+
         <Navbar.Collapse>
           {collapseItems.map((item, index) => (
             <Navbar.CollapseItem key={index}>
-              <Button>{item}</Button>
+              <Text onClick={iconHandle} h4 b>
+                <Link href={`#${item}`}>{item}</Link>
+              </Text>
             </Navbar.CollapseItem>
           ))}
         </Navbar.Collapse>
-      </Button.Group>
 
-      <Navbar.Content activeColor='warning' hideIn='xs' variant='default'>
-        <Navbar.Link href='#home'>
-          <Text h4>Inicio</Text>
-        </Navbar.Link>
-        <Navbar.Link href='#works'>
-          <Text h4>Proyectos</Text>
-        </Navbar.Link>
-        <Navbar.Link href='#about'>
-          <Text h4>Sobre mi</Text>
-        </Navbar.Link>
-        <Navbar.Link href='#skills'>
-          <Text h4>Habilidades</Text>
-        </Navbar.Link>
-      </Navbar.Content>
-      <Spacer y={2} />
-    </Navbar>
+        <Navbar.Content enableCursorHighlight activeColor='warning' hideIn='xs' variant='underline'>
+          <Text h4 b>
+            <Navbar.Link href='#home'>Home</Navbar.Link>
+          </Text>
+          <Text h4 b>
+            <Navbar.Link href='#works'>Projects</Navbar.Link>
+          </Text>
+          <Text h4 b>
+            <Navbar.Link href='#about'>About</Navbar.Link>
+          </Text>
+          <Text h4 b>
+            <Navbar.Link href='#skills'>Skills</Navbar.Link>
+          </Text>
+        </Navbar.Content>
+      </Navbar>
+      <ScrollToTop />
+    </>
   )
 }

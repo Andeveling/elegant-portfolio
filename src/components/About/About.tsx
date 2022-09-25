@@ -1,18 +1,19 @@
-import { Box, Social } from '@/components'
-import { Container, Grid, Spacer, Text } from '@nextui-org/react'
+import { Box, Social, Title } from '@/components'
+import { Container, Divider, Grid, Row, Spacer, Text } from '@nextui-org/react'
 import Photo from './Photo'
 
 export default function About() {
   return (
     <Container
-      id='about'
       fluid
       alignContent='center'
-      css={{ boxSizing: 'border-box', mt: 100, p: 0, borderBottom: '10px solid $warning', height: '100vh' }}>
+      css={{ boxSizing: 'border-box', borderBottom: '10px solid $warning', minHeight: '95vh', p: 0 }}>
+      <Spacer y={1} />
       <Box>
-        <Text size={80} h1>
-          About.
-        </Text>
+        <Row justify='flex-start'>
+          <Title title='About.' es='Sobre mí' />
+        </Row>
+        <Divider y={1} />
         <Grid.Container gap={2}>
           <Grid xs={12} sm={6} css={{ flexDirection: 'column' }}>
             <Text size='$lg'>
