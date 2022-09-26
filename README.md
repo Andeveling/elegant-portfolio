@@ -6,6 +6,11 @@
 
 Un portafolio basado en mis conocimientos y buenas practicas adquiridas en el desarrollo de proyectos personales.
 
+## 🌌 Tech Stack
+
+**🖥 Client:** React, Redux, NextUI
+
+**⚙️ Server:** Typescript, NodeJs, ExpressJs,
 
 ## 📝 Características
 
