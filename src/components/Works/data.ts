@@ -104,14 +104,24 @@ export const Projects: ProjectI[] = [
   },
   {
     id: '3',
-    title: 'Lottery-Marzeel',
-    subtitle: 'App para crear y gestionar sorteos',
-    description:
-      'Diseño y desarrollo de una SPA basada en sorteos, con panel de admin para gestionar sus sorteos y participantes',
-    imageUrl: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1664077383/samples/imagecon-group.jpg',
-    imagesUrl: [{ id: '1', title: '', url: '' }],
-    tech: ['ReactJs', 'Redux-Toolkit', 'Material/UI', 'ExpressJs', 'NodeJs', 'Sequelize', 'PostgreSQL', 'Typescript'],
-    repository: '',
+    title: 'Weather App',
+    subtitle: 'Crud básico con use de estados locales',
+    description: 'Diseño y desarrollo de una simple app que consume una api, nos permite ver el clima',
+    imageUrl: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1664233159/PORTFOLIO/Screenshot_2_jxfaeu.jpg',
+    imagesUrl: [
+      {
+        id: '1',
+        title: 'Busqueda por ciudades',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1664233159/PORTFOLIO/Screenshot_2_jxfaeu.jpg',
+      },
+      {
+        id: '2',
+        title: 'Detalles de la ciudad',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1664233321/PORTFOLIO/Screenshot_3_lqskqy.jpg',
+      },
+    ],
+    tech: ['ReactJs', 'CSS'],
+    repository: 'https://github.com/Andeveling/WeatherApp.git',
     deploy: '',
     role: 'Diseño y desarrollo',
     contribution: '',
