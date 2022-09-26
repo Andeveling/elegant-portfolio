@@ -11,6 +11,7 @@
     "lint": "eslint --fix . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.4",
     "@mui/icons-material": "^5.10.6",
     "@nextui-org/react": "1.0.0-beta.10",
     "@reduxjs/toolkit": "^1.8.5",
