@@ -4,13 +4,17 @@
 
 # 💼 Portafolio Personal
 
-Un portafolio basado en mis conocimientos y buenas practicas adquiridas en el desarrollo de proyectos personales.
+Un portafolio basado en mis conocimientos y buenas practicas adquiridas en el desarrollo de proyectos personales. 
+
+
 
 ## 🌌 Tech Stack
 
 **🖥 Client:** React, Redux, NextUI
 
-**⚙️ Server:** Typescript, NodeJs, ExpressJs,
+**⚙️ Server:** Typescript, NodeJs, ExpressJs
+
+
 
 ## 📝 Características
 
@@ -28,9 +32,11 @@ Si tienes alguna recomendación, por favor hazmelo saber por medio de mi correo
 andeveling@gmail.com
 
 
+
 ## 😎 Colaboradores
 
 - [Andeveling](https://www.github.com/andeveling)
+
 
 
 ## License
