@@ -1,8 +1,8 @@
+import { Logo, ScrollToTop } from '@/components'
 import CloseIcon from '@mui/icons-material/Close'
 import MenuIcon from '@mui/icons-material/Menu'
 import { Link, Navbar, Text } from '@nextui-org/react'
 import { useState } from 'react'
-import { ScrollToTop, Logo } from '@/components'
 
 export default function Nav() {
   const collapseItems = ['home', 'works', 'about', 'skills']
@@ -34,11 +34,8 @@ export default function Nav() {
                     '&:hover': {
                       color: '$warning',
                     },
-                    '&:active': {
-                      borderBottom: '3px solid $warning',
-                    },
                   }}
-                  href={`#${item}`}>
+                  href={`/#${item}`}>
                   {item}
                 </Link>
               </Text>
@@ -48,16 +45,16 @@ export default function Nav() {
 
         <Navbar.Content enableCursorHighlight activeColor='warning' hideIn='xs' variant='underline'>
           <Text h4 b>
-            <Navbar.Link href='#home'>Home</Navbar.Link>
+            <Navbar.Link href='/#home'>Home</Navbar.Link>
           </Text>
           <Text h4 b>
-            <Navbar.Link href='#works'>Projects</Navbar.Link>
+            <Navbar.Link href='/#works'>Projects</Navbar.Link>
           </Text>
           <Text h4 b>
-            <Navbar.Link href='#about'>About</Navbar.Link>
+            <Navbar.Link href='/#about'>About</Navbar.Link>
           </Text>
           <Text h4 b>
-            <Navbar.Link href='#skills'>Skills</Navbar.Link>
+            <Navbar.Link href='/#skills'>Skills</Navbar.Link>
           </Text>
         </Navbar.Content>
       </Navbar>

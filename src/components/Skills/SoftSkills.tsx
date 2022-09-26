@@ -1,9 +1,9 @@
 import { Badge, Card, Col, Text } from '@nextui-org/react'
-import { dataSkills } from './dataSkills'
+import { dataSkills } from '@/components'
 
 export default function SoftSkills() {
   return (
-    <Card css={{ p: 10 }} variant='flat'>
+    <Card css={{ p: 10, minHeight: 450 }} variant='flat'>
       <Card.Header css={{ jc: 'center' }}>
         <Text css={{ textAlign: 'center', borderBottom: '1px solid $warning' }} h3>
           Skills / Habilidades
@@ -19,10 +19,7 @@ export default function SoftSkills() {
         </Col>
       </Card.Body>
       <Card.Footer>
-        <Text css={{ fontWeight: 100 }} size='$xs' color='warning'>
-          *The progress bars that you see do not correspond to the knowledge that could be obtained from said
-          technology, but to the time that I have dedicated to learning and practicing it.{' '}
-        </Text>
+        <Text css={{ fontWeight: 100 }} size='$xs' color='warning'></Text>
       </Card.Footer>
     </Card>
   )

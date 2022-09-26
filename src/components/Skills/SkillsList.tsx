@@ -1,4 +1,4 @@
-import { Card, Divider, Progress, Spacer, Text } from '@nextui-org/react'
+import { Card, Divider, Progress, Text } from '@nextui-org/react'
 
 export default function SkillsList() {
   return (

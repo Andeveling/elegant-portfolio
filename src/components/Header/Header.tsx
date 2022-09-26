@@ -1,4 +1,4 @@
-import { Container, Divider, Text, Row, Grid } from '@nextui-org/react'
+import { Container, Divider, Grid, Text } from '@nextui-org/react'
 
 export default function Header() {
   return (
@@ -8,8 +8,6 @@ export default function Header() {
       justify='center'
       css={{
         height: '100vh',
-        pt: '$10',
-        pb: '$10',
         display: 'flex',
         flexDirection: 'column',
         borderBottom: '10px solid $warningLightContrast',

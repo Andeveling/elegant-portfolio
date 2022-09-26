@@ -1,7 +1,5 @@
-import { Box, Title, HeaderTechSkills, SkillsList } from '@/components'
+import { Box, Title, HeaderTechSkills, SkillsList, HeaderSoftSkills, SoftSkills } from '@/components'
 import { Container, Divider, Grid, Row, Spacer } from '@nextui-org/react'
-import HeaderSoftSkills from './HeaderSoftSkills'
-import SoftSkills from './SoftSkills'
 
 export default function Skills() {
   return (

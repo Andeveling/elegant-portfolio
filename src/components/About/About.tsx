@@ -1,6 +1,5 @@
-import { Box, Social, Title } from '@/components'
+import { Box, Social, Title, Photo } from '@/components'
 import { Col, Container, Divider, Grid, Row, Spacer, Text } from '@nextui-org/react'
-import Photo from './Photo'
 
 export default function About() {
   return (

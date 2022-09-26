@@ -1,5 +1,6 @@
+export { default as WorkBrowserView } from './WorkBrowserView'
 export { default as WorkCard } from './WorkCard'
-export { default as WorkDetail } from './WorkDetail'
+export { default as WorkDetailButtons } from './WorkDetailButtons'
+export { default as WorkDetails } from './WorkDetails'
 export { default as Works } from './Works'
-export { default as WorksUI } from './WorksUI'
 export * from './data'

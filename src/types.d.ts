@@ -8,14 +8,18 @@ export interface SkillsI {
   id: number | string
   title: string
 }
-
+export interface ImagesCollectionI {
+  id: number | string
+  title: string
+  url: string
+}
 export interface ProjectI {
   id: number | string
   title: string
   subtitle: string
   description: string
   imageUrl: string
-  imagesUrl: string[]
+  imagesUrl: ImagesCollectionI[]
   repository: string
   deploy: string
   role: string

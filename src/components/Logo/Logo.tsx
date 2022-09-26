@@ -1,4 +1,4 @@
-import { Progress, Text, Col, Row, Badge } from '@nextui-org/react'
+import { Col, Progress, Row, Text } from '@nextui-org/react'
 
 interface LogoProps {
   name: string

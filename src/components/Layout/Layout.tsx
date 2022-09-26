@@ -1,4 +1,4 @@
-import { Box } from './Box'
+import { Box } from '@/components'
 import { Props } from '@/types'
 
 export const Layout = ({ children }: Props) => (

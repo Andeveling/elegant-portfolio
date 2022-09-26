@@ -13,7 +13,7 @@ export const ScrollToTop = () => {
 
   const scrollToTop = (): void => {
     window.scrollTo({
-      top: 100,
+      top: 95,
       behavior: 'smooth',
     })
   }
@@ -30,7 +30,9 @@ export const ScrollToTop = () => {
             zIndex: 3,
             cursor: 'pointer',
             borderRadius: '50%',
-            boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px',
+
+            background: '#f5a524',
+            color: 'black',
           }}
         />
       ) : (
