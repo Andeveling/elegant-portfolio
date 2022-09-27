@@ -3,13 +3,13 @@ import { Button, Container, Row, Tooltip, Link } from '@nextui-org/react'
 import { SocialMedia } from '@/components'
 
 const style = {
-  fontSize: 20,
+  fontSize: 30,
   cursor: 'pointer',
 }
 
 export default function MiniSocial() {
   return (
-    <Button.Group shadow size='sm' color='warning' auto light>
+    <Button.Group shadow size='md' color='warning' auto light>
       <Link color='warning' href={SocialMedia.GITHUB} target='_blank'>
         <Button>
           <Tooltip content={'Github'}>
