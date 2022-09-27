@@ -4,7 +4,7 @@ import { Spacer, Text, Col } from '@nextui-org/react'
 export default function HeaderTechSkills() {
   return (
     <Col css={{ minHeight: 210 }}>
-      <Subtitle subtitle='Tetch Skills' es='Habilidades Técnicas' />
+      <Subtitle subtitle='Tech Skills' es='Habilidades Técnicas' />
       <Text size='$lg'>
         Aunque mis primeros pasos como programador fueron en lenguajes como{' '}
         <Text b color='primary'>
