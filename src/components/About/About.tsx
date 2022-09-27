@@ -34,10 +34,10 @@ export default function About() {
             </Text>
             <Spacer y={1} />
             <Text size='$lg'>
-              Desde hace muchos años la programación la programación fue uno de mis hobbies, siempre trabaje en pequeños
-              proyectos en C#, inspirado por el mercado indie de videojuegos, hasta que decidí iniciar mi camino como
-              web developer en un bootcamp y llevar este hobbie al siguiente nivel, ahora estoy haciendo de este lindo
-              mundo mi nuevo camino profesional, con el apoyo incondicional de mi{' '}
+              Desde hace muchos años la programación fue uno de mis hobbies, siempre trabaje en pequeños proyectos en
+              C#, inspirado por el mercado indie de videojuegos, hasta que decidí iniciar mi camino como web developer
+              en un bootcamp y llevar este hobbie al siguiente nivel, ahora estoy haciendo de este lindo mundo mi nuevo
+              camino profesional, con el apoyo incondicional de mi{' '}
               <Text b css={{ color: '$pink700' }}>
                 familia
               </Text>

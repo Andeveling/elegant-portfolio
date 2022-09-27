@@ -10,7 +10,7 @@ export default function Title({ title, es }: TitleProps) {
     <Col
       css={{
         ml: 20,
-        pt: 40,
+        pt: 55,
         '@xsMax': {
           pt: 48,
         },

@@ -1,8 +1,9 @@
 import { GitHub, LinkedIn, Twitter } from '@mui/icons-material'
-import { Button, Container, Row, Tooltip } from '@nextui-org/react'
+import { Button, Container, Row, Tooltip, Link } from '@nextui-org/react'
+import { SocialMedia } from '@/components'
 
-export const style = {
-  fontSize: 50,
+const style = {
+  fontSize: 40,
   cursor: 'pointer',
 }
 
@@ -10,23 +11,28 @@ export default function Social() {
   return (
     <Container>
       <Row justify='center' align='center'>
-        <Button.Group shadow size='xl' color='warning' auto light>
-          <Button>
-            <Tooltip content={'Github'}>
-              <GitHub sx={style} />
-            </Tooltip>
-          </Button>
-
-          <Button>
-            <Tooltip content={'Twitter'}>
-              <Twitter sx={style} />
-            </Tooltip>
-          </Button>
-          <Button>
-            <Tooltip content={'LinkedIn'}>
-              <LinkedIn sx={style} />
-            </Tooltip>
-          </Button>
+        <Button.Group shadow size='md' color='warning' auto light>
+          <Link color='warning' href={SocialMedia.GITHUB} target='_blank'>
+            <Button>
+              <Tooltip content={'Github'}>
+                <GitHub sx={style} />
+              </Tooltip>
+            </Button>
+          </Link>
+          <Link color='warning' href={SocialMedia.TWITTER} target='_blank'>
+            <Button>
+              <Tooltip content={'Twitter'}>
+                <Twitter sx={style} />
+              </Tooltip>
+            </Button>
+          </Link>
+          <Link color='warning' href={SocialMedia.LINKEDIN} target='_blank'>
+            <Button>
+              <Tooltip content={'LinkedIn'}>
+                <LinkedIn sx={style} />
+              </Tooltip>
+            </Button>
+          </Link>
         </Button.Group>
       </Row>
     </Container>

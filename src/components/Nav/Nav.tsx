@@ -1,4 +1,4 @@
-import { Logo, ScrollToTop } from '@/components'
+import { Logo, ScrollToTop, MiniSocial } from '@/components'
 import CloseIcon from '@mui/icons-material/Close'
 import MenuIcon from '@mui/icons-material/Menu'
 import { Link, Navbar, Text } from '@nextui-org/react'
@@ -11,17 +11,18 @@ export default function Nav() {
 
   return (
     <>
-      <Navbar variant='sticky'>
+      <Navbar variant='floating' css={{ zIndex: 1000 }}>
         <Navbar.Brand>
           <Navbar.Toggle aria-label='toggle navigation' showIn='xs'>
             {isActive ? (
-              <CloseIcon onClick={iconHandle} fontSize='large' />
+              <CloseIcon onClick={iconHandle} fontSize='medium' />
             ) : (
-              <MenuIcon onClick={iconHandle} fontSize='large' />
+              <MenuIcon onClick={iconHandle} fontSize='medium' />
             )}
           </Navbar.Toggle>
 
           <Logo name='Andeveling' />
+          <MiniSocial />
         </Navbar.Brand>
 
         <Navbar.Collapse>

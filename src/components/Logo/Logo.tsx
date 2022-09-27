@@ -1,4 +1,4 @@
-import { Col, Progress, Row, Text } from '@nextui-org/react'
+import { Col, Link, Progress, Row, Text } from '@nextui-org/react'
 
 interface LogoProps {
   name: string
@@ -10,10 +10,13 @@ export default function Logo({ name }: LogoProps) {
         h2
         css={{
           '@xsMax': {
-            fontSize: 35,
+            fontSize: 25,
+            ml: 10,
           },
         }}>
-        {name}
+        <Link href='/#home' color={'text'}>
+          {name}
+        </Link>
       </Text>
       <Row
         css={{
@@ -22,7 +25,18 @@ export default function Logo({ name }: LogoProps) {
           display: 'flex',
           alignItems: 'center',
         }}>
-        <Progress shadow striped size='sm' value={100} color='warning' />
+        <Progress
+          css={{
+            '@xsMax': {
+              size: 'xs',
+            },
+          }}
+          shadow
+          striped
+          size='sm'
+          value={100}
+          color='warning'
+        />
       </Row>
     </Col>
   )

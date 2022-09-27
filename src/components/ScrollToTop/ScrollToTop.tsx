@@ -5,7 +5,7 @@ export const ScrollToTop = () => {
   const [scrolled, setScrolled] = useState(true)
   useEffect(() => {
     const onScroll = () => {
-      window.scrollY > 250 ? setScrolled(true) : setScrolled(false)
+      window.scrollY > 350 ? setScrolled(true) : setScrolled(false)
     }
     window.addEventListener('scroll', onScroll)
     return () => window.removeEventListener('scroll', onScroll)
@@ -13,7 +13,7 @@ export const ScrollToTop = () => {
 
   const scrollToTop = (): void => {
     window.scrollTo({
-      top: 95,
+      top: 0,
       behavior: 'smooth',
     })
   }

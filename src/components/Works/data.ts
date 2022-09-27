@@ -31,7 +31,7 @@ export const Projects: ProjectI[] = [
       },
       {
         id: '5',
-        title: '',
+        title: 'Detalles de cada Pokemon mediante params',
         url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1664143225/PORTFOLIO/5_pdk6n5.jpg',
       },
     ],
@@ -100,7 +100,7 @@ export const Projects: ProjectI[] = [
     deploy: 'https://sehos.netlify.app/',
     role: 'Diseño y desarrollo',
     contribution:
-      'Entre mis contibuciones mas impostantes estan; configuración boiler plate del cliente, Eslint, Prettier, view del panel de usuario y funcionalidad, implementación front/back sistema de Reviews',
+      'Entre mis contribuciones mas importantes estan: configuración boiler plate del cliente, Eslint, Prettier, view del panel de usuario y funcionalidad, implementación front/back sistema de Reviews',
   },
   {
     id: '3',

@@ -22,9 +22,9 @@ export default function SkillsList() {
         <Progress size='sm' value={20} striped />
       </Card.Body>
       <Card.Footer>
-        <Text css={{ fontWeight: 100 }} size='$xs' color='warning'>
-          *The progress bars that you see do not correspond to the knowledge that could be obtained from said
-          technology, but to the time that I have dedicated to learning and practicing it.{' '}
+        <Text css={{ fontWeight: 100 }} size='$sm' color='warning'>
+          *Las barras de progreso corresponden al tiempo que he dedicado a cada tecnología y no a un nivel de
+          conocimiento.
         </Text>
       </Card.Footer>
     </Card>

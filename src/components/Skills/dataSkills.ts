@@ -31,7 +31,11 @@ export const dataSkills: SkillsI[] = [
   },
   {
     id: 8,
-    title: 'Autodidacta',
+    title: 'Escucha',
+  },
+  {
+    id: 9,
+    title: 'Flexibilidad',
   },
   {
     id: 10,
