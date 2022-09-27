@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react'
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp'
 
 export const ScrollToTop = () => {
-  const [scrolled, setScrolled] = useState(true)
+  const [scrolled, setScrolled] = useState(false)
+
   useEffect(() => {
     const onScroll = () => {
       window.scrollY > 350 ? setScrolled(true) : setScrolled(false)
@@ -30,7 +31,6 @@ export const ScrollToTop = () => {
             zIndex: 3,
             cursor: 'pointer',
             borderRadius: '50%',
-
             background: '#f5a524',
             color: 'black',
           }}

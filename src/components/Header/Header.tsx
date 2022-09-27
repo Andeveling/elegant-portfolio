@@ -7,7 +7,7 @@ export default function Header() {
       alignContent='center'
       justify='center'
       css={{
-        height: '95vh',
+        minHeight: '95vh',
         display: 'flex',
         flexDirection: 'column',
         borderBottom: '10px solid $warningLightContrast',
