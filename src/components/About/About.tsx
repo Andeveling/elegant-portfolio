@@ -30,7 +30,7 @@ export default function About() {
               </Text>
               , inicié mi aprendizaje tech en plataformas digitales, hace un año y complemente al unirme a un bootcamp
               en junio de este año 2022, es una comunidad increíble que cuenta con gente dispuesta a apoyar y encontré
-              mucha gente con la misma pasión por esta labor.
+              más personas con la misma pasión por esta labor.
             </Text>
             <Spacer y={1} />
             <Text size='$lg'>
