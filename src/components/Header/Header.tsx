@@ -3,14 +3,16 @@ import { Container, Divider, Grid, Text } from '@nextui-org/react'
 export default function Header() {
   return (
     <Container
+      id='home'
       fluid
       alignContent='center'
       justify='center'
       css={{
-        minHeight: '95vh',
+        minHeight: '97vh',
         display: 'flex',
         flexDirection: 'column',
-        borderBottom: '10px solid $warningLightContrast',
+        mb: 0,
+        borderBottom: '20px solid $warningLightContrast',
       }}>
       <Grid.Container justify='center'>
         <Grid xs={12} sm={12} justify='center'>

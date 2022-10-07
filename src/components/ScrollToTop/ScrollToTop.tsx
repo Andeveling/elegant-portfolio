@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp'
+import { useNavigate } from 'react-router-dom'
 
 export const ScrollToTop = () => {
   const [scrolled, setScrolled] = useState(false)
+  const navigate = useNavigate()
 
   useEffect(() => {
     const onScroll = () => {
@@ -13,6 +15,7 @@ export const ScrollToTop = () => {
   }, [])
 
   const scrollToTop = (): void => {
+    navigate('/')
     window.scrollTo({
       top: 0,
       behavior: 'smooth',

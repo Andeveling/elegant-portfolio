@@ -1,15 +1,15 @@
-import { GitHub, LinkedIn, Twitter } from '@mui/icons-material'
-import { Button, Container, Row, Tooltip, Link } from '@nextui-org/react'
 import { SocialMedia } from '@/components'
+import { GitHub, LinkedIn, Twitter } from '@mui/icons-material'
+import { Button, Link, Tooltip } from '@nextui-org/react'
 
 const style = {
-  fontSize: 30,
+  fontSize: 26,
   cursor: 'pointer',
 }
 
 export default function MiniSocial() {
   return (
-    <Button.Group shadow size='md' color='warning' auto light>
+    <Button.Group shadow size='xs' color='warning' auto light css={{ ml: 14 }}>
       <Link color='warning' href={SocialMedia.GITHUB} target='_blank'>
         <Button>
           <Tooltip content={'Github'}>

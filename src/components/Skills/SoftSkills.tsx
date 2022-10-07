@@ -3,7 +3,7 @@ import { dataSkills } from '@/components'
 
 export default function SoftSkills() {
   return (
-    <Card css={{ p: 10, minHeight: 450 }} variant='flat'>
+    <Card css={{ p: 10, minHeight: 460 }} variant='flat'>
       <Card.Header css={{ jc: 'center' }}>
         <Text css={{ textAlign: 'center', borderBottom: '1px solid $warning' }} h3>
           Skills / Habilidades
