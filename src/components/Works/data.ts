@@ -128,6 +128,60 @@ export const Projects: ProjectI[] = [
   },
   {
     id: '4',
+    title: 'Books CRUD',
+    subtitle: 'Un crud basado en Node Js y Express Js',
+    description:
+      'Un crud basico usando Node y Express, con persistencia de datos en un archivo .JSON usando fs de node. y usando como  motor de plantillas EJS',
+    imageUrl: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665245797/book/Screenshot_1_sd8pmx.jpg',
+    imagesUrl: [
+      {
+        id: '1',
+        title: 'Visualiza los libros',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665245797/book/Screenshot_1_sd8pmx.jpg',
+      },
+      {
+        id: '2',
+        title: 'Crea libros',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665245797/book/Screenshot_7_kdonmp.jpg',
+      },
+    ],
+    tech: ['Html', 'CSS', 'Node Js', 'Express Js', 'Bootstrap', 'Ejs'],
+    repository: 'https://github.com/Andeveling/books',
+    deploy: '',
+    role: 'Desarrollo de un crud basado en Node Js y Express, usando como motor de plantillas EJS',
+    contribution: 'Crear un backend, usando un motor de plantillas como EJS para la interfaz.',
+  },
+  {
+    id: '5',
+    title: 'Todo App',
+    subtitle: 'Una app donde podemos agregar Tareas a realizar, tacharlas y borrarlas',
+    description: 'Diseño y desarrollo de una simple app para gestión de tareas',
+    imageUrl: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665247621/todoapp/Screenshot_1_aa9ze0.jpg',
+    imagesUrl: [
+      {
+        id: '1',
+        title: 'Lista de Tareas',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665247621/todoapp/Screenshot_1_aa9ze0.jpg',
+      },
+      {
+        id: '2',
+        title: 'Crea Tareas',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665247621/todoapp/Screenshot_3_h420fu.jpg',
+      },
+      {
+        id: '3',
+        title: 'Filtra tareas por match en cadenas de texto',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665247621/todoapp/Screenshot_2_f3cuwe.jpg',
+      },
+    ],
+    tech: ['Html', 'CSS', 'ReactJs'],
+    repository: 'https://github.com/Andeveling/todo-list',
+    deploy: '',
+    role: 'Diseño y desarrollo',
+    contribution: 'En este proyecto aprendí el uso de React-Context y React-Portal, sus distintos usos y utilidades.',
+  },
+  {
+    id: '6',
     title: 'Portfolio',
     subtitle: 'Portafolio hecho con html y css',
     description: 'Diseño y desarrollo de una simple página',
@@ -146,7 +200,7 @@ export const Projects: ProjectI[] = [
     contribution: 'En este pequeño proyecto aprendi conceptos como responsive design y el uso de CSS Grid',
   },
   {
-    id: '5',
+    id: '7',
     title: 'Bata-bit',
     subtitle: 'Proyecto de maquetación html',
     description: 'Tomando un diseño de una pagina en la web, hice la maquetación usando html y css',
