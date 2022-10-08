@@ -12,7 +12,7 @@ export default function Header() {
         display: 'flex',
         flexDirection: 'column',
         mb: 0,
-        borderBottom: '20px solid $warningLightContrast',
+        borderBottom: '10px solid $warningLightContrast',
       }}>
       <Grid.Container justify='center'>
         <Grid xs={12} sm={12} justify='center'>

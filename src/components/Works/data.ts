@@ -126,4 +126,57 @@ export const Projects: ProjectI[] = [
     role: 'Diseño y desarrollo',
     contribution: '',
   },
+  {
+    id: '4',
+    title: 'Portfolio',
+    subtitle: 'Portafolio hecho con html y css',
+    description: 'Diseño y desarrollo de una simple página',
+    imageUrl: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665189624/Photo/Screenshot_1_o8pm5w.jpg',
+    imagesUrl: [
+      {
+        id: '1',
+        title: '',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665189624/Photo/Screenshot_1_o8pm5w.jpg',
+      },
+    ],
+    tech: ['Html', 'CSS'],
+    repository: 'https://github.com/Andeveling/Andeveling.github.io',
+    deploy: 'https://andeveling.github.io/',
+    role: 'Maquetación html y css',
+    contribution: 'En este pequeño proyecto aprendi conceptos como responsive design y el uso de CSS Grid',
+  },
+  {
+    id: '5',
+    title: 'Bata-bit',
+    subtitle: 'Proyecto de maquetación html',
+    description: 'Tomando un diseño de una pagina en la web, hice la maquetación usando html y css',
+    imageUrl: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665190068/Photo/Screenshot_5_hsg5ek.jpg',
+    imagesUrl: [
+      {
+        id: '1',
+        title: '',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665190068/Photo/Screenshot_3_movpwe.jpg ',
+      },
+      {
+        id: '2',
+        title: '',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665190068/Photo/Screenshot_4_civiol.jpg',
+      },
+      {
+        id: '3',
+        title: '',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665190068/Photo/Screenshot_5_hsg5ek.jpg',
+      },
+      {
+        id: '4',
+        title: '',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665190156/Photo/Screenshot_6_kts5qz.jpg',
+      },
+    ],
+    tech: ['Html', 'CSS'],
+    repository: 'https://github.com/Andeveling/Bata-Bit',
+    deploy: '',
+    role: 'Maquetación html, css',
+    contribution: '',
+  },
 ]
