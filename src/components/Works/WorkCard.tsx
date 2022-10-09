@@ -73,7 +73,7 @@ export default function WorkCard({
           />
         </Modal.Body>
         <Modal.Footer>
-          <Button auto color='error' onClick={() => setVisible(false)} size='lg'>
+          <Button auto color='error' onClick={() => setVisible(false)} size='sm'>
             <Text b css={{ color: '$text' }}>
               close
             </Text>
