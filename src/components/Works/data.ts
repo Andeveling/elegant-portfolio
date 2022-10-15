@@ -2,6 +2,40 @@ import { ProjectI } from '@/types'
 
 export const Projects: ProjectI[] = [
   {
+    id: '0',
+    title: 'Rick and Morty App',
+    subtitle: 'Proyecto frontend',
+    description: 'Diseño y desarrollo de una SPA basada en la serie Rick and Morty.',
+    imageUrl: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665871790/book/Screenshot_5_mnhm47.jpg',
+    imagesUrl: [
+      {
+        id: '1',
+        title: '',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665871790/book/Screenshot_5_mnhm47.jpg',
+      },
+      {
+        id: '2',
+        title: '',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665871795/book/Screenshot_4_xa0qdm.jpg',
+      },
+      {
+        id: '3',
+        title: '',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665871784/book/Screenshot_3_firff3.jpg',
+      },
+      {
+        id: '4',
+        title: '',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665871703/book/Screenshot_2_sg0io1.jpg',
+      },
+    ],
+    tech: ['ReactJs', 'Typescript', 'Redux-Toolkit', 'NextUI'],
+    repository: 'https://github.com/Andeveling/myrickandmortyapp',
+    deploy: 'https://myrickandmortyandeveling.netlify.app/',
+    role: 'Diseño y desarrollo',
+    contribution: '',
+  },
+  {
     id: '1',
     title: 'Pokemon app',
     subtitle: 'App full stack basada en Pokemon',
