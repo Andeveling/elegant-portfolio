@@ -1,4 +1,5 @@
 export * from './About'
+export * from './Awards'
 export * from './Content'
 export * from './Copyright'
 export * from './DownloadCV'

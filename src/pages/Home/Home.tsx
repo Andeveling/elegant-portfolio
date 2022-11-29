@@ -1,5 +1,5 @@
 import { About, Header, Layout, Skills, Works } from '@/components'
-import { Spacer } from '@nextui-org/react'
+import { Awards } from '@/components/Awards'
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
       <Works />
       <About />
       <Skills />
+      <Awards />
     </Layout>
   )
 }

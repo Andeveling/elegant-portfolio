@@ -1,11 +1,11 @@
 import { Logo, MiniSocial } from '@/components'
 import CloseIcon from '@mui/icons-material/Close'
 import MenuIcon from '@mui/icons-material/Menu'
-import { Link, Navbar, Text } from '@nextui-org/react'
+import { Badge, Link, Navbar, Text } from '@nextui-org/react'
 import { useState } from 'react'
 
 export default function Nav() {
-  const collapseItems = ['Home', 'Works', 'About', 'Skills']
+  const collapseItems = ['Home', 'Works', 'About', 'Skills', 'Awards']
   const [isActive, setActive] = useState<boolean>(false)
   const iconHandle = (): void => setActive(!isActive)
 
@@ -71,6 +71,13 @@ export default function Nav() {
           </Text>
           <Text h4 b>
             <Navbar.Link href='/#skills'>Skills</Navbar.Link>
+          </Text>
+          <Text h4 b>
+            <Navbar.Link href='/#awards'>
+              {' '}
+              <Badge color='success' variant='dot' />
+              Awards
+            </Navbar.Link>
           </Text>
           <Text h4 b>
             <Navbar.Link
