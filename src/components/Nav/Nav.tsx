@@ -75,7 +75,7 @@ export default function Nav() {
           <Text h4 b>
             <Navbar.Link href='/#awards'>
               {' '}
-              <Badge color='success' variant='dot' />
+              <Badge css={{ ml: '$2' }} color='success' variant='dot' />
               Awards
             </Navbar.Link>
           </Text>
