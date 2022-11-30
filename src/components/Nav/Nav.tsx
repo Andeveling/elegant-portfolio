@@ -51,7 +51,7 @@ export default function Nav() {
                     color: '$warning',
                   },
                 }}
-                href={`https://docs.google.com/document/d/1VwQAKk-Ei2Orp-374Cxvb8OxmEgBWeqVzoGvp8ECQAg/edit?usp=sharing`}
+                href={`https://docs.google.com/document/d/12w5OUXyvkhuErQT2KIqkYqNKXWGOu0fCu13TWffTB9Q/edit?usp=sharing`}
                 target='_blank'>
                 Curriculum
               </Link>
