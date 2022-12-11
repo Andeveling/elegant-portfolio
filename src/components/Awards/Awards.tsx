@@ -63,7 +63,7 @@ const Awards = () => {
           <Box>
             <Image
               css={{ alignSelf: 'flex-start' }}
-              width={600}
+              width='98%'
               src='https://res.cloudinary.com/dg84upfsp/image/upload/v1669762426/PORTFOLIO/Screenshot_3_tl6ldq.jpg'
               alt='certificate'
             />
