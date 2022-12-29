@@ -20,7 +20,7 @@ const Awards = () => {
             <Text b color='error'>
               Gentleman Programing
             </Text>{' '}
-            por la participation activa en el Hackathon 2022 como un reconocimiento al esfuerzo.
+            por la participación activa en el Hackathon 2022 como un reconocimiento al esfuerzo.
           </Text>
           <Spacer y={1} />
           <Text size='$lg'>
