@@ -13,7 +13,7 @@ export default function Nav() {
     <>
       <Navbar variant='floating' css={{ zIndex: 1000 }}>
         <Navbar.Brand>
-          <Navbar.Toggle aria-label='toggle navigation' showIn='xs'>
+          <Navbar.Toggle aria-label='toggle navigation' showIn='sm'>
             {isActive ? (
               <CloseIcon onClick={iconHandle} fontSize='large' />
             ) : (
@@ -59,7 +59,7 @@ export default function Nav() {
           </Navbar.CollapseItem>
         </Navbar.Collapse>
 
-        <Navbar.Content enableCursorHighlight activeColor='warning' hideIn='xs'>
+        <Navbar.Content enableCursorHighlight activeColor='warning' hideIn='sm'>
           <Text h4 b>
             <Navbar.Link href='/#home'>Home</Navbar.Link>
           </Text>
@@ -75,7 +75,7 @@ export default function Nav() {
           <Text h4 b>
             <Navbar.Link href='/#awards'>
               {' '}
-              <Badge css={{ ml: '$2' }} color='success' variant='dot' />
+              <Badge css={{ m: '$2' }} color='success' variant='dot' />
               Awards
             </Navbar.Link>
           </Text>
