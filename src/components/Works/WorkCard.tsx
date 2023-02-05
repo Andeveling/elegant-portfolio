@@ -21,17 +21,17 @@ export default function WorkCard({
         isHoverable
         isPressable
         onPress={() => setVisible(true)}
-        variant='flat'
+        variant='bordered'
         css={{
           h: '360px',
-          opacity: 0.7,
+          opacity: 100,
           transition: 100,
           '&:hover': {
             opacity: 1,
             boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px',
           },
         }}>
-        <Card.Header css={{ bg: 'black', position: 'absolute', zIndex: 1, top: 0, opacity: 0.8 }}>
+        <Card.Header css={{ bg: 'black', position: 'absolute', zIndex: 1, top: 0 }}>
           <Col>
             <Text b h4>
               {title}
@@ -42,7 +42,7 @@ export default function WorkCard({
           </Col>
         </Card.Header>
         <Card.Body css={{ p: 0, h: '80%' }}>
-          <Card.Image src={imageUrl || ''} objectFit='cover' width={'100%'} height={300} alt={'img'} />
+          <Card.Image src={imageUrl as string} objectFit='cover' width={'100%'} height={300} alt={'img'} />
         </Card.Body>
         <Card.Footer css={{ bg: 'black', position: 'absolute', zIndex: 1, bottom: 0 }}>
           <Text>{description?.slice(0, 100)}...</Text>
@@ -56,6 +56,7 @@ export default function WorkCard({
         fullScreen
         aria-labelledby='modal-title'
         aria-describedby='modal-description'
+        color='#fff'
         {...bindings}>
         <Modal.Header>
           <Text b size={'xxx-large'} css={{ borderBottom: '3px solid $warningLightContrast' }}>
@@ -73,8 +74,8 @@ export default function WorkCard({
           />
         </Modal.Body>
         <Modal.Footer>
-          <Button auto color='warning' onClick={() => setVisible(false)}>
-            <Text b css={{ color: '$black' }}>
+          <Button auto color='error' onClick={() => setVisible(false)} size='sm'>
+            <Text b css={{ color: '$text' }}>
               close
             </Text>
           </Button>

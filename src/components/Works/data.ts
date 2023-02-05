@@ -2,6 +2,121 @@ import { ProjectI } from '@/types'
 
 export const Projects: ProjectI[] = [
   {
+    id: '10',
+    title: 'Arqustik App',
+    subtitle: 'Aplicación full stack con Next JS y Strapi.',
+    description:
+      'Herramienta para ayudar a un acercamiento comercial más rápido a la hora de cotizar ventanas en PVC marca Deceuninck Colombia, cuenta con una parte pública para los interesados en cotizar y una parte privada para la gestión de los clientes visitantes de la web.',
+    imageUrl: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1675561334/Screenshot_3_ykbr0a.jpg',
+    imagesUrl: [
+      {
+        id: '1',
+        title: '',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1675561334/Screenshot_3_ykbr0a.jpg',
+      },
+      {
+        id: '2',
+        title: '',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1675561334/Screenshot_4_d3gqna.jpg',
+      },
+      {
+        id: '3',
+        title: '',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1675561334/Screenshot_9_psoaop.jpg',
+      },
+      {
+        id: '4',
+        title: '',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1675561673/Screenshot_10_bfxfhn.jpg',
+      },
+    ],
+    tech: ['NextJs', 'SWR', 'Tailwind CSS', 'Strapi', 'PostgreSQL', 'Railway'],
+    repository: '',
+    deploy: 'https://arqustikquoter.vercel.app/',
+    role: 'Diseño desarrollo y gestión de aplicación',
+    contribution: '',
+  },
+  {
+    id: '9',
+    title: 'Portafolio servicios en desarrollo',
+    subtitle: 'Portafolio para profesional en enfermería',
+    description: 'Página estática hecha usando NextJS en su versión 13, para una profesional en enfermería.',
+    imageUrl: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1675559062/PORTFOLIO/Screenshot_6_acp7l7.jpg',
+    imagesUrl: [
+      {
+        id: '1',
+        title: '',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1675559062/PORTFOLIO/Screenshot_6_acp7l7.jpg',
+      },
+      {
+        id: '2',
+        title: '',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1675559062/PORTFOLIO/Screenshot_8_uchsdc.jpg',
+      },
+    ],
+    tech: ['NextJs', 'SWR', 'Tailwind CSS'],
+    repository: 'https://github.com/Andeveling/portafolio-marcela',
+    deploy: '',
+    role: 'Diseño y desarrollo de página estática',
+    contribution: '',
+  },
+
+  {
+    id: '8',
+    title: 'Add In Tech App',
+    subtitle: 'App full stack basada en un crud',
+    description:
+      'Diseño y desarrollo de una simple SPA fullstack presentada como prueba técnica en la cual solicitaban un CRUD, la aplicación cuenta con listado de Productos como catálogo, y un panel de admin con funciones CRUD para gestionar los productos.',
+    imageUrl: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1671401089/addintech/Screenshot_2_szg8ud.jpg',
+    imagesUrl: [
+      {
+        id: '1',
+        title: 'Listado de productos subidos mediante CRUD',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1671401089/addintech/Screenshot_2_szg8ud.jpg',
+      },
+    ],
+    tech: ['ReactJs', 'Redux-Toolkit', 'NextUI', 'ExpressJs', 'NodeJs', 'Mongoose', 'MongoDB'],
+    repository: 'https://github.com/Andeveling/addintech-front',
+    deploy: '',
+    role: 'Diseño y desarrollo',
+    contribution: '',
+  },
+
+  {
+    id: '0',
+    title: 'Rick and Morty App',
+    subtitle: 'Proyecto frontend',
+    description: 'Diseño y desarrollo de una SPA basada en la serie Rick and Morty.',
+    imageUrl: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665871790/book/Screenshot_5_mnhm47.jpg',
+    imagesUrl: [
+      {
+        id: '1',
+        title: '',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665871790/book/Screenshot_5_mnhm47.jpg',
+      },
+      {
+        id: '2',
+        title: '',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665871795/book/Screenshot_4_xa0qdm.jpg',
+      },
+      {
+        id: '3',
+        title: '',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665871784/book/Screenshot_3_firff3.jpg',
+      },
+      {
+        id: '4',
+        title: '',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665871703/book/Screenshot_2_sg0io1.jpg',
+      },
+    ],
+    tech: ['ReactJs', 'Typescript', 'Redux-Toolkit', 'NextUI'],
+    repository: 'https://github.com/Andeveling/myrickandmortyapp',
+    deploy: 'https://myrickandmortyandeveling.netlify.app/',
+    role: 'Diseño y desarrollo',
+    contribution: '',
+  },
+  {
     id: '1',
     title: 'Pokemon app',
     subtitle: 'App full stack basada en Pokemon',
@@ -124,6 +239,113 @@ export const Projects: ProjectI[] = [
     repository: 'https://github.com/Andeveling/WeatherApp.git',
     deploy: '',
     role: 'Diseño y desarrollo',
+    contribution: '',
+  },
+  {
+    id: '4',
+    title: 'Books CRUD',
+    subtitle: 'Un crud basado en Node Js y Express Js',
+    description:
+      'Un crud basico usando Node y Express, con persistencia de datos en un archivo .JSON usando fs de node. y usando como  motor de plantillas EJS',
+    imageUrl: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665245797/book/Screenshot_1_sd8pmx.jpg',
+    imagesUrl: [
+      {
+        id: '1',
+        title: 'Visualiza los libros',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665245797/book/Screenshot_1_sd8pmx.jpg',
+      },
+      {
+        id: '2',
+        title: 'Crea libros',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665245797/book/Screenshot_7_kdonmp.jpg',
+      },
+    ],
+    tech: ['Html', 'CSS', 'Node Js', 'Express Js', 'Bootstrap', 'Ejs'],
+    repository: 'https://github.com/Andeveling/books',
+    deploy: '',
+    role: 'Desarrollo de un crud basado en Node Js y Express, usando como motor de plantillas EJS',
+    contribution: 'Crear un backend, usando un motor de plantillas como EJS para la interfaz.',
+  },
+  {
+    id: '5',
+    title: 'Todo App',
+    subtitle: 'Una app donde podemos agregar Tareas a realizar, tacharlas y borrarlas',
+    description: 'Diseño y desarrollo de una simple app para gestión de tareas',
+    imageUrl: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665247621/todoapp/Screenshot_1_aa9ze0.jpg',
+    imagesUrl: [
+      {
+        id: '1',
+        title: 'Lista de Tareas',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665247621/todoapp/Screenshot_1_aa9ze0.jpg',
+      },
+      {
+        id: '2',
+        title: 'Crea Tareas',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665247621/todoapp/Screenshot_3_h420fu.jpg',
+      },
+      {
+        id: '3',
+        title: 'Filtra tareas por match en cadenas de texto',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665247621/todoapp/Screenshot_2_f3cuwe.jpg',
+      },
+    ],
+    tech: ['Html', 'CSS', 'ReactJs'],
+    repository: 'https://github.com/Andeveling/todo-list',
+    deploy: '',
+    role: 'Diseño y desarrollo',
+    contribution: 'En este proyecto aprendí el uso de React-Context y React-Portal, sus distintos usos y utilidades.',
+  },
+  {
+    id: '6',
+    title: 'Portfolio',
+    subtitle: 'Portafolio hecho con html y css',
+    description: 'Diseño y desarrollo de una simple página',
+    imageUrl: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665189624/Photo/Screenshot_1_o8pm5w.jpg',
+    imagesUrl: [
+      {
+        id: '1',
+        title: '',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665189624/Photo/Screenshot_1_o8pm5w.jpg',
+      },
+    ],
+    tech: ['Html', 'CSS'],
+    repository: 'https://github.com/Andeveling/Andeveling.github.io',
+    deploy: 'https://andeveling.github.io/',
+    role: 'Maquetación html y css',
+    contribution: 'En este pequeño proyecto aprendi conceptos como responsive design y el uso de CSS Grid',
+  },
+  {
+    id: '7',
+    title: 'Bata-bit',
+    subtitle: 'Proyecto de maquetación html',
+    description: 'Tomando un diseño de una pagina en la web, hice la maquetación usando html y css',
+    imageUrl: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665190068/Photo/Screenshot_5_hsg5ek.jpg',
+    imagesUrl: [
+      {
+        id: '1',
+        title: '',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665190068/Photo/Screenshot_3_movpwe.jpg ',
+      },
+      {
+        id: '2',
+        title: '',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665190068/Photo/Screenshot_4_civiol.jpg',
+      },
+      {
+        id: '3',
+        title: '',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665190068/Photo/Screenshot_5_hsg5ek.jpg',
+      },
+      {
+        id: '4',
+        title: '',
+        url: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1665190156/Photo/Screenshot_6_kts5qz.jpg',
+      },
+    ],
+    tech: ['Html', 'CSS'],
+    repository: 'https://github.com/Andeveling/Bata-Bit',
+    deploy: '',
+    role: 'Maquetación html, css',
     contribution: '',
   },
 ]

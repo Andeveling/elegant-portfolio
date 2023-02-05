@@ -5,13 +5,12 @@ interface LogoProps {
 }
 export default function Logo({ name }: LogoProps) {
   return (
-    <Col>
+    <Col css={{ ml: 12 }}>
       <Text
         h2
         css={{
           '@xsMax': {
             fontSize: 25,
-            ml: 10,
           },
         }}>
         <Link href='/#home' color={'text'}>

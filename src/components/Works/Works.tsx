@@ -1,19 +1,13 @@
-import { Title, WorkCard, Projects } from '@/components'
-import { Container, Divider, Grid, Row, Spacer } from '@nextui-org/react'
+import { Projects, Title, WorkCard } from '@/components'
+import { Container, Grid, Spacer } from '@nextui-org/react'
 
 export default function Works() {
   return (
-    <Container
-      alignContent='center'
-      css={{ boxSizing: 'border-box', p: 0, borderBottom: '10px solid $warning', pb: 20, minHeight: '97vh' }}>
-      <Spacer y={1} />
-      <Row>
-        <Title title='Projects.' es='Proyectos' />
-      </Row>
-      <Divider y={1} />
-      <Spacer y={1} />
-
-      <Grid.Container gap={1} justify='center'>
+    <Container id='works' css={{ p: 0, pl: 12, pb: 20, minHeight: '97vh', borderBottom: '10px solid $warning' }}>
+      <Grid.Container gap={1} justify='center' css={{ width: '100%' }}>
+        <Grid xs={12}>
+          <Title title='Projects.' es='Proyectos' />
+        </Grid>
         {Projects.map((project, i) => {
           return (
             <Grid key={project.id} xs={12} sm={6} md={4}>

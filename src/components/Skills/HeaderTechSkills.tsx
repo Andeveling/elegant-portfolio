@@ -16,11 +16,11 @@ export default function HeaderTechSkills() {
           {' '}
           C#.
         </Text>{' '}
-        &nbsp;Mis habilidades hoy en día resaltan como Web developer haciendo uso de librerias{' '}
+        &nbsp;Mis habilidades hoy en día resaltan como Web developer haciendo uso de librerías{' '}
         <Text b css={{ color: '$yellow700' }}>
           Javascript
         </Text>
-        , la gráfica a continuación muestra las tecnologías a las que más me he dedicado a aprender el utlimo año.
+        , la gráfica a continuación muestra las tecnologías a las que más me he dedicado a aprender el útlimo año.
       </Text>
       <Spacer y={1} />
     </Col>

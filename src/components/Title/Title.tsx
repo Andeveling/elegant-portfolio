@@ -10,9 +10,9 @@ export default function Title({ title, es }: TitleProps) {
     <Col
       css={{
         ml: 20,
-        pt: 55,
+        pt: 70,
         '@xsMax': {
-          pt: 48,
+          pt: 65,
         },
       }}>
       <Text
@@ -21,7 +21,7 @@ export default function Title({ title, es }: TitleProps) {
         css={{
           lineHeight: '$9xl',
           '@xsMax': {
-            fontSize: 60,
+            fontSize: 55,
             ml: '20%',
           },
         }}>

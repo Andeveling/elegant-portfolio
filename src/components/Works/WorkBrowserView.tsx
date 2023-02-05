@@ -9,11 +9,13 @@ export default function WorkBrowserView({ title, url }: Partial<ImagesCollection
         <Badge color='warning' />
         <Badge color='success' />
       </Card.Header>
-      <Card.Body css={{ width: '100%', p: 0 }}>
-        <Card.Image src={url || ''} alt='img' objectFit='cover' width='100%' />
+      <Card.Body css={{ width: '100%', p: 0, mt: 6 }}>
+        <Card.Image src={url as string} alt='img' objectFit='cover' width='100%' />
       </Card.Body>
-      <Card.Footer css={{ zIndex: 1, bottom: 0, bg: '$accents1', h: 40 }}>
-        <Text b>{title}</Text>
+      <Card.Footer css={{ zIndex: 1, bottom: 0, bg: '$accents1', h: 40, textAlign: 'center' }}>
+        <Text b css={{ textAlign: 'center' }}>
+          {title}
+        </Text>
       </Card.Footer>
     </Card>
   )
