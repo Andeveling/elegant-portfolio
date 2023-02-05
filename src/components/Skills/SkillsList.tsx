@@ -9,16 +9,16 @@ export default function SkillsList() {
         </Text>
       </Card.Header>
       <Card.Body>
-        <Text h4>React JS / Redux Toolkit / RTK Query</Text>
-        <Progress size='sm' value={50} striped color='warning' />
+        <Text h4>NextJS / ReactJS / Redux Toolkit / RTK Query</Text>
+        <Progress size='sm' value={70} striped color='warning' />
         <Divider y={1} />
-        <Text h4>Material UI / Next UI</Text>
-        <Progress size='sm' value={25} striped color='warning' />
+        <Text h4>Material UI / Next UI / Tailwind CSS</Text>
+        <Progress size='sm' value={70} striped color='warning' />
         <Divider y={1} />
-        <Text h4>Express JS / Node JS / Sequelize</Text>
+        <Text h4>Strapi / Express JS / Node JS / Sequelize</Text>
         <Progress size='sm' value={15} striped color='success' />
         <Divider y={1} />
-        <Text h4>Postgres SQL</Text>
+        <Text h4>PostgreSQL / MongoDB / Firebase</Text>
         <Progress size='sm' value={10} striped />
       </Card.Body>
       <Card.Footer>
