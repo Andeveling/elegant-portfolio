@@ -3,10 +3,12 @@ import CloseIcon from '@mui/icons-material/Close'
 import MenuIcon from '@mui/icons-material/Menu'
 import { Badge, Link, Navbar, Text } from '@nextui-org/react'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 export default function Nav() {
   const collapseItems = ['Home', 'Works', 'About', 'Skills', 'Awards']
   const [isActive, setActive] = useState<boolean>(false)
+  const { t, i18n } = useTranslation()
   const iconHandle = (): void => setActive(!isActive)
 
   return (
