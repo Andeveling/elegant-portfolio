@@ -4,11 +4,12 @@ import { globalStyles } from '@/Theme'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { PublicRoutes } from './routes'
 import { Suspense } from 'react'
+import Loader from './components/Loader/Loader'
 
 export default function App() {
   globalStyles()
   return (
-    <Suspense fallback={'loading'}>
+    <Suspense fallback={<Loader />}>
       <BrowserRouter>
         <ScrollToTopRouter />
         <Nav />
