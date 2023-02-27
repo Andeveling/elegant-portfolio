@@ -1,0 +1,11 @@
+{
+  "about": {
+    "title": "Sobre mí.",
+    "subtitle": "About.",
+    "social": "Sigueme en mis redes:",
+    "content-1": "¡Saludos! Soy un desarrollador web que vive en Buga, Colombia.",
+    "content-2": "Yo soy Fabián Andrés Parra Sánchez. Empecé mi aprendizaje en tecnología en plataformas digitales hace casi dos años y lo complementé uniéndome a un bootcamp (Henry) en junio de este año 2022. Es una comunidad increíble con personas dispuestas a apoyarse mutuamente, y he encontrado más individuos con la misma pasión por este trabajo.",
+    "content-3": "La programación ha sido uno de mis hobbies durante muchos años. Siempre trabajé en pequeños proyectos para la web en HTML, CSS y JavaScript, así como en C#, inspirado por el mercado indie de videojuegos, hasta que decidí iniciar mi camino como web developer en un bootcamp y llevar este hobby al siguiente nivel. Ahora estoy convirtiendo este mundo maravilloso en mi nueva carrera profesional, con el apoyo incondicional de mi familia, especialmente de mi esposa.",
+    "content-4": "He decidido enfocar mi carrera en el desarrollo frontend. Me encanta trabajar en la parte visual de las aplicaciones web y estoy fascinado por las últimas tendencias en diseño y usabilidad. Mi objetivo es crear interfaces atractivas y funcionales que ofrezcan una excelente experiencia de usuario."
+  }
+}

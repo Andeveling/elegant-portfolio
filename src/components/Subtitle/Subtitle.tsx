@@ -1,15 +1,15 @@
 import { Row, Text } from '@nextui-org/react'
 
 interface TitleProps {
-  subtitle: string
-  es: string
+  title: string
 }
 
-export default function Subtitle({ subtitle, es }: TitleProps) {
+export default function Subtitle({ title }: TitleProps) {
   return (
-    <Row justify='center' align='center'>
-      <Text h2>{subtitle}</Text>
-      <Text> / {es}</Text>
+    <Row css={{ display: 'flex', flexDirection: 'column' }} justify='center' align='center'>
+      <Text size={'$3xl'} b>
+        {title}
+      </Text>
     </Row>
   )
 }

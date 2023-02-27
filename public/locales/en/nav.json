@@ -1,0 +1,12 @@
+{
+  "nav": {
+    "menu": {
+      "home": "Home",
+      "projects": "Projects",
+      "about": "About",
+      "skills": "Skills",
+      "awards": "Awards",
+      "cv": "Curriculum"
+    }
+  }
+}

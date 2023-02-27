@@ -1,92 +1,115 @@
-import { Logo, MiniSocial } from '@/components'
+import { Logo } from '@/components'
+import { AllCSS } from '@/models/AllCss.model'
 import CloseIcon from '@mui/icons-material/Close'
 import MenuIcon from '@mui/icons-material/Menu'
-import { Badge, Link, Navbar, Text } from '@nextui-org/react'
+import { Link, Navbar, Text } from '@nextui-org/react'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
+import { ChangeLanguageButton } from '../ChangeLanguageButton'
 
 export default function Nav() {
-  const collapseItems = ['Home', 'Works', 'About', 'Skills', 'Awards']
   const [isActive, setActive] = useState<boolean>(false)
+  const { t, i18n } = useTranslation(['nav', 'header', 'projects', 'skills', 'awards'])
   const iconHandle = (): void => setActive(!isActive)
 
+  const css: AllCSS = {
+    links: {
+      color: '$text',
+      '&:hover': {
+        color: '$warning',
+      },
+      '&:active': {
+        color: '$warning',
+      },
+    },
+  }
+
+  const links = [
+    {
+      href: '/#home',
+      content: t('nav.menu.home'),
+    },
+    {
+      href: '/#works',
+      content: t('nav.menu.projects'),
+    },
+    {
+      href: '/#about',
+      content: t('nav.menu.about'),
+    },
+    {
+      href: '/#skills',
+      content: t('nav.menu.skills'),
+    },
+    {
+      href: '/#awards',
+      content: t('nav.menu.awards'),
+    },
+    {
+      href: 'https://docs.google.com/document/d/12w5OUXyvkhuErQT2KIqkYqNKXWGOu0fCu13TWffTB9Q/edit?usp=sharing',
+      content: t('nav.menu.cv'),
+    },
+  ]
+
+  const languageHandle = () => {
+    i18n.language === 'es' ? i18n.changeLanguage('en') : i18n.changeLanguage('es')
+  }
   return (
     <>
       <Navbar variant='floating' css={{ zIndex: 1000 }}>
         <Navbar.Brand>
-          <Navbar.Toggle aria-label='toggle navigation' showIn='sm'>
+          <Navbar.Toggle aria-label='toggle navigation' showIn='lg'>
             {isActive ? (
-              <CloseIcon onClick={iconHandle} fontSize='large' />
+              <CloseIcon onClick={iconHandle} sx={{ fontSize: 50 }} />
             ) : (
-              <MenuIcon onClick={iconHandle} fontSize='large' />
+              <MenuIcon onClick={iconHandle} sx={{ fontSize: 50 }} />
             )}
           </Navbar.Toggle>
 
           <Logo name='Andeveling' />
-          <MiniSocial />
+          <Navbar.Content css={{ ml: 20 }}>
+            <ChangeLanguageButton languageHandle={languageHandle} lang={i18n.language as 'es' | 'en'} />
+          </Navbar.Content>
         </Navbar.Brand>
 
         <Navbar.Collapse>
-          {collapseItems.map((item, index) => (
-            <Navbar.CollapseItem key={index}>
-              <Text h4 b>
-                <Link
-                  css={{
-                    color: '$text',
-                    '&:hover': {
-                      color: '$warning',
-                    },
-                  }}
-                  href={`/#${item.toLowerCase()}`}>
-                  {item}
+          {links.map((link) => {
+            return link.content === t('nav.menu.cv') ? (
+              <Navbar.CollapseItem key={link.href}>
+                <Link href={link.href} target='_blank'>
+                  <Text size='$xl' b css={css.links}>
+                    {link.content}
+                  </Text>
                 </Link>
-              </Text>
-            </Navbar.CollapseItem>
-          ))}
-          <Navbar.CollapseItem>
-            <Text h4 b>
-              <Link
-                css={{
-                  color: '$text',
-                  '&:hover': {
-                    color: '$warning',
-                  },
-                }}
-                href={`https://docs.google.com/document/d/12w5OUXyvkhuErQT2KIqkYqNKXWGOu0fCu13TWffTB9Q/edit?usp=sharing`}
-                target='_blank'>
-                Curriculum
-              </Link>
-            </Text>
-          </Navbar.CollapseItem>
+              </Navbar.CollapseItem>
+            ) : (
+              <Navbar.CollapseItem key={link.href}>
+                <Link href={link.href}>
+                  <Text size='$xl' b css={css.links}>
+                    {link.content}
+                  </Text>
+                </Link>
+              </Navbar.CollapseItem>
+            )
+          })}
         </Navbar.Collapse>
 
-        <Navbar.Content enableCursorHighlight activeColor='warning' hideIn='sm'>
-          <Text h4 b>
-            <Navbar.Link href='/#home'>Home</Navbar.Link>
-          </Text>
-          <Text h4 b>
-            <Navbar.Link href='/#works'>Projects</Navbar.Link>
-          </Text>
-          <Text h4 b>
-            <Navbar.Link href='/#about'>About</Navbar.Link>
-          </Text>
-          <Text h4 b>
-            <Navbar.Link href='/#skills'>Skills</Navbar.Link>
-          </Text>
-          <Text h4 b>
-            <Navbar.Link href='/#awards'>
-              {' '}
-              <Badge css={{ m: '$2' }} color='success' variant='dot' />
-              Awards
-            </Navbar.Link>
-          </Text>
-          <Text h4 b>
-            <Navbar.Link
-              color={'warning'}
-              href='https://docs.google.com/document/d/12w5OUXyvkhuErQT2KIqkYqNKXWGOu0fCu13TWffTB9Q/edit?usp=sharing'
-              target='_blank'>
-              Curriculum
-            </Navbar.Link>
-          </Text>
+        <Navbar.Content activeColor='warning' hideIn='lg'>
+          {links.map((link) => {
+            return link.content === t('nav.menu.cv') ? (
+              <Navbar.Link key={link.href} href={link.href} target='_blank'>
+                <Text size='$xl' b css={css.links}>
+                  {link.content}
+                </Text>
+              </Navbar.Link>
+            ) : (
+              <Navbar.Link key={link.href} href={link.href} activeColor='warning'>
+                <Text size='$xl' b css={css.links}>
+                  {link.content}
+                </Text>
+              </Navbar.Link>
+            )
+          })}
         </Navbar.Content>
       </Navbar>
     </>

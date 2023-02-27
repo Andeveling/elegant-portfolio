@@ -1,54 +1,53 @@
 import { Photo, Social, Title } from '@/components'
+import { AllCSS } from '@/models/AllCss.model'
 import { Col, Container, Grid, Spacer, Text } from '@nextui-org/react'
+import { useTranslation } from 'react-i18next'
 
 export default function About() {
+  const css: AllCSS = {
+    container: { px: 10, pb: 10, minHeight: '97vh', borderBottom: '10px solid $warning' },
+  }
+  const { t } = useTranslation('about')
   return (
-    <Container
-      id='about'
-      alignContent='center'
-      css={{ px: 10, pb: 20, minHeight: '97vh', borderBottom: '10px solid $warning' }}>
+    <Container id='about' as='section' alignContent='center' css={css.container}>
       <Grid.Container>
         <Grid xs={12}>
           <Spacer y={1} />
         </Grid>
         <Grid xs={12}>
-          <Title title='About.' es='Sobre mí' />
+          <Title title={t('about.title')} subtitle={t('about.subtitle')} />
         </Grid>
         <Grid xs={12} sm={6} css={{ flexDirection: 'column' }}>
-          <Text size='$lg'>
-            Hola, soy un{' '}
-            <Text b color='warning'>
-              Web developer
-            </Text>
-            , resido en <strong>Buga</strong>, Colombia.
-          </Text>
+          <Text
+            size='$lg'
+            dangerouslySetInnerHTML={{
+              __html: t('about.content-1'),
+            }}
+          />
           <Spacer y={1} />
-          <Text size='$lg'>
-            Yo soy{' '}
-            <Text b color='warning'>
-              Fabián Andrés Parra Sánchez
-            </Text>
-            , inicié mi aprendizaje tech en plataformas digitales, hace un año y complemente al unirme a un bootcamp en
-            junio de este año 2022, es una comunidad increíble que cuenta con gente dispuesta a apoyar y encontré más
-            personas con la misma pasión por esta labor.
-          </Text>
+          <Text
+            size='$lg'
+            dangerouslySetInnerHTML={{
+              __html: t('about.content-2'),
+            }}
+          />
           <Spacer y={1} />
-          <Text size='$lg'>
-            Desde hace muchos años la programación fue uno de mis hobbies, siempre trabaje en pequeños proyectos en C#,
-            inspirado por el mercado indie de videojuegos, hasta que decidí iniciar mi camino como web developer en un
-            bootcamp y llevar este hobbie al siguiente nivel, ahora estoy haciendo de este lindo mundo mi nuevo camino
-            profesional, con el apoyo incondicional de mi{' '}
-            <Text b css={{ color: '$pink700' }}>
-              familia
-            </Text>
-            , en especial de mi esposa.
-          </Text>
+          <Text size='$lg' dangerouslySetInnerHTML={{ __html: t('about.content-3') }} />
+          <Spacer y={1} />
+          <Text
+            size='$lg'
+            dangerouslySetInnerHTML={{
+              __html: t('about.content-4'),
+            }}
+          />
           <Spacer y={1} />
           <Col css={{ textAlign: 'center' }}>
-            <Text b h5>
-              Visita mis redes:
+            <Text b size='$xl' css={{ mb: 10 }}>
+              {t('about.social')}
             </Text>
+            <Spacer y={1} />
             <Social />
+            <Spacer y={1} />
           </Col>
         </Grid>
         <Grid xs={12} sm={6} justify='center'>

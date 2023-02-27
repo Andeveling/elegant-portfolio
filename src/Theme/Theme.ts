@@ -17,7 +17,7 @@ export const Theme = createTheme({
       primarySolidContrast: '$white',
       primaryShadow: '$green500',
 
-      gradient: 'linear-gradient(112deg, $blue100 -25%, $pink500 -10%, $purple500 80%)',
+      gradient: 'linear-gradient(112deg, $yellow100 -25%, $red500 -10%, $orange500 80%)',
       link: '#5E1DAD',
 
       gold: '#7c6f3b',

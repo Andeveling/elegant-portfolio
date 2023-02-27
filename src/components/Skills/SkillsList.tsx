@@ -21,12 +21,7 @@ export default function SkillsList() {
         <Text h4>PostgreSQL / MongoDB / Firebase</Text>
         <Progress size='sm' value={10} striped />
       </Card.Body>
-      <Card.Footer>
-        <Text css={{ fontWeight: 300 }} color='warning'>
-          *Las barras de progreso corresponden al tiempo que he dedicado a cada tecnología y no a un nivel de
-          conocimiento.
-        </Text>
-      </Card.Footer>
+      <Card.Footer></Card.Footer>
     </Card>
   )
 }

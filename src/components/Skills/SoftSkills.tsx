@@ -1,17 +1,21 @@
 import { Badge, Card, Col, Text } from '@nextui-org/react'
-import { dataSkills } from '@/components'
+import { useTranslation } from 'react-i18next'
+import { SkillsI } from '@/types'
+import { Fragment } from 'react'
 
 export default function SoftSkills() {
+  const { t } = useTranslation('skills')
+  const skills: SkillsI[] = t('skills.soft-skills.list', { returnObjects: true })
   return (
     <Card css={{ p: 10, minHeight: 460 }} variant='flat'>
       <Card.Header css={{ jc: 'center' }}>
         <Text css={{ textAlign: 'center', borderBottom: '1px solid $warning' }} h3>
-          Skills / Habilidades
+          {t('skills.soft-skills.title')}
         </Text>
       </Card.Header>
       <Card.Body>
         <Col css={{ textAlign: 'center' }}>
-          {dataSkills.map((skill) => (
+          {skills.map((skill) => (
             <Badge css={{ bg: '$warningLightContrast', color: '$accents0', m: 4 }} size='lg' key={skill.id}>
               {skill.title}
             </Badge>
@@ -19,7 +23,7 @@ export default function SoftSkills() {
         </Col>
       </Card.Body>
       <Card.Footer>
-        <Text css={{ fontWeight: 100 }} size='$xs' color='warning'></Text>
+        <Fragment />
       </Card.Footer>
     </Card>
   )
