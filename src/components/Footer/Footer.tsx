@@ -1,7 +1,9 @@
 import { Container, Text, Grid, Spacer, Divider } from '@nextui-org/react'
 import { Social } from '@/components'
+import { useTranslation } from 'react-i18next'
 
 export default function Footer() {
+  const { t } = useTranslation('footer')
   return (
     <>
       <Divider y={1} />
@@ -13,9 +15,9 @@ export default function Footer() {
             <Text h4 css={{ lineHeight: '$9xl', color: '$warningLightContrast' }}>
               Andres Parra
             </Text>
-            <Text css={{ lineHeight: '$9xl' }}>Web Developer</Text>
+            <Text css={{ lineHeight: '$9xl' }}>Front-end Developer</Text>
             <Spacer y={1} />
-            <Text>Gracias 🤍 por visitar mi portafolio</Text>
+            <Text>{t('footer.thanks-message')}</Text>
           </Grid>
           <Grid
             xs={12}

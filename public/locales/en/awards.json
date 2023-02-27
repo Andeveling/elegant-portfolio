@@ -1,0 +1,12 @@
+{
+  "awards": {
+    "title": "Awards.",
+    "subtitle": "Premios.",
+    "social": "follow me:",
+    "content": {
+      "p-1": "This recognition was awarded to me by the Gentleman Programming staff for my active participation in the 2022 Hackathon, as recognition for my effort.",
+      "p-2": "After starting with a team of 6 members divided into two groups with the goal of developing an application for the Gentleman Programming Hackathon focused on job searches, we divided the tasks into frontend and backend, where we had to meet different requirements within a maximum of 42 hours. At first, we all started off very well, motivated and working together, but as time passed, some members left, others became demotivated and the team gradually became disorganized. On the last day, some members did not show up, which was very demotivating for me. However, since I had committed to participating, I felt that I had to move forward and respect that commitment. In the end, I decided to focus on the main features required by the event and created an app that met the minimum requirements, using some of the code my team members had left behind and adapting others in my own way.",
+      "p-3": "Special thanks to the Gentleman Programming team and Mr. Alan Buscaglia for the opportunity."
+    }
+  }
+}

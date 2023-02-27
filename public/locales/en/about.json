@@ -1,0 +1,11 @@
+{
+  "about": {
+    "title": "About.",
+    "subtitle": "Sobre mí.",
+    "social": "follow me:",
+    "content-1": "Hello, I am a web developer based in Buga, Colombia.",
+    "content-2": "I am Fabián Andrés Parra Sánchez. I began my tech learning journey on digital platforms almost two years ago, and complemented it by joining a bootcamp (Henry) in June of 2022. It's an incredible community with people willing to support each other, and I have found more individuals with the same passion for this work.",
+    "content-3": "Programming has been one of my hobbies for many years. I always worked on small projects for the web in HTML, CSS, and JavaScript, as well as in C#, inspired by the indie game market, until I decided to start my journey as a web developer in a bootcamp and take this hobby to the next level. Now, I am making this wonderful world my new professional path, with the unconditional support of my family, especially my wife.",
+    "content-4": "I have decided to focus my career on frontend development. I love working on the visual aspect of web applications and I am fascinated by the latest trends in design and usability. My goal is to create attractive and functional interfaces that offer an excellent user experience."
+  }
+}

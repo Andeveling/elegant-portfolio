@@ -122,7 +122,7 @@ export const Projects: ProjectI[] = [
     subtitle: 'App full stack basada en Pokemon',
     description:
       'Diseño y desarrollo de una SPA fullstack basada en la serie Pokémon, la aplicación cuenta con listado de Pokémons, búsqueda, filtrado, ordenamiento.',
-    imageUrl: 'https://assets.pokemon.com/assets//cms2/img/watch-pokemon-tv/_downloads/movie14_wallpaper1_1440.jpg',
+    imageUrl: 'https://res.cloudinary.com/dg84upfsp/image/upload/v1664143225/PORTFOLIO/4_ci08sn.jpg',
     imagesUrl: [
       {
         id: '1',

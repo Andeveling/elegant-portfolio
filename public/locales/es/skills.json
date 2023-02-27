@@ -1,0 +1,66 @@
+{
+  "skills": {
+    "title": "Habilidades.",
+    "subtitle": "Skills.",
+    "soft-skills": {
+      "title": "Habilidades Blandas",
+      "subtitle": "Soft Skills",
+      "content-1": "Estas son las habilidades que he obtenido a lo largo de los años en mis trabajos pasados. He tenido la oportunidad de trabajar en empresas del sector de la construcción en distintas áreas, como el campo operativo, administrativo y liderando grupos de trabajo. Esto me ha permitido poner en práctica diversas habilidades blandas aplicadas al área laboral.",
+      "list": [
+        {
+          "id": 1,
+          "title": "Automotivación"
+        },
+        {
+          "id": 2,
+          "title": "Autodidacta"
+        },
+        {
+          "id": 3,
+          "title": "Colaboración"
+        },
+        {
+          "id": 4,
+          "title": "Cooperación"
+        },
+        {
+          "id": 5,
+          "title": "Curiosidad"
+        },
+        {
+          "id": 6,
+          "title": "Dedicación"
+        },
+        {
+          "id": 7,
+          "title": "Liderazgo"
+        },
+        {
+          "id": 8,
+          "title": "Escucha"
+        },
+        {
+          "id": 9,
+          "title": "Flexibilidad"
+        },
+        {
+          "id": 10,
+          "title": "Proactividad"
+        },
+        {
+          "id": 11,
+          "title": "Responsabilidad"
+        },
+        {
+          "id": 12,
+          "title": "Tenacidad"
+        }
+      ]
+    },
+    "tech-skills": {
+      "title": "Habilidades Técnicas.",
+      "subtitle": "Tech Skills.",
+      "content-1": "Aunque mis primeros pasos como programador fueron en lenguajes como C y C#, hoy en día me destaco como desarrollador web, haciendo uso de HTML, CSS y librerías Javascript como React JS. La siguiente gráfica muestra las tecnologías a las que más me he dedicado a aprender en el último año."
+    }
+  }
+}
