@@ -6,7 +6,10 @@
       "about": "About",
       "skills": "Skills",
       "awards": "Awards",
-      "cv": "Curriculum"
+      "cv": {
+        "title": "Curriculum",
+        "href": "https://docs.google.com/document/d/1lZinzBbqJbwvq_MyfGQ0iUyWruxYtgpiSKX0mG8NyqQ/edit?usp=sharing"
+      }
     }
   }
 }

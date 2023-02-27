@@ -6,7 +6,10 @@
       "about": "Sobre mí",
       "skills": "Habilidades",
       "awards": "Premios",
-      "cv": "Curriculum"
+      "cv": {
+        "title": "Curriculum",
+        "href": "https://docs.google.com/document/d/12w5OUXyvkhuErQT2KIqkYqNKXWGOu0fCu13TWffTB9Q/edit?usp=sharing"
+      }
     }
   }
 }

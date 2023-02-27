@@ -26,28 +26,34 @@ export default function Nav() {
 
   const links = [
     {
+      id: 1,
       href: '/#home',
       content: t('nav.menu.home'),
     },
     {
+      id: 2,
       href: '/#works',
       content: t('nav.menu.projects'),
     },
     {
+      id: 3,
       href: '/#about',
       content: t('nav.menu.about'),
     },
     {
+      id: 4,
       href: '/#skills',
       content: t('nav.menu.skills'),
     },
     {
+      id: 5,
       href: '/#awards',
       content: t('nav.menu.awards'),
     },
     {
-      href: 'https://docs.google.com/document/d/12w5OUXyvkhuErQT2KIqkYqNKXWGOu0fCu13TWffTB9Q/edit?usp=sharing',
-      content: t('nav.menu.cv'),
+      id: 6,
+      href: t('nav.menu.cv.href'),
+      content: t('nav.menu.cv.title'),
     },
   ]
 
@@ -74,17 +80,17 @@ export default function Nav() {
 
         <Navbar.Collapse>
           {links.map((link) => {
-            return link.content === t('nav.menu.cv') ? (
-              <Navbar.CollapseItem key={link.href}>
-                <Link href={link.href} target='_blank'>
+            return link.content === t('nav.menu.cv.title') ? (
+              <Navbar.CollapseItem key={link.id}>
+                <Link href={link.href as string} target='_blank'>
                   <Text size='$xl' b css={css.links}>
                     {link.content}
                   </Text>
                 </Link>
               </Navbar.CollapseItem>
             ) : (
-              <Navbar.CollapseItem key={link.href}>
-                <Link href={link.href}>
+              <Navbar.CollapseItem key={link.id}>
+                <Link href={link.href as string}>
                   <Text size='$xl' b css={css.links}>
                     {link.content}
                   </Text>
@@ -96,14 +102,14 @@ export default function Nav() {
 
         <Navbar.Content activeColor='warning' hideIn='lg'>
           {links.map((link) => {
-            return link.content === t('nav.menu.cv') ? (
-              <Navbar.Link key={link.href} href={link.href} target='_blank'>
+            return link.content === t('nav.menu.cv.title') ? (
+              <Navbar.Link key={link.id} href={link.href as string} target='_blank'>
                 <Text size='$xl' b css={css.links}>
                   {link.content}
                 </Text>
               </Navbar.Link>
             ) : (
-              <Navbar.Link key={link.href} href={link.href} activeColor='warning'>
+              <Navbar.Link key={link.id} href={link.href as string} activeColor='warning'>
                 <Text size='$xl' b css={css.links}>
                   {link.content}
                 </Text>
